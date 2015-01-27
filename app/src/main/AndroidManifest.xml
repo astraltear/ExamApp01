@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ArrayListActivity"
+            android:label="@string/title_activity_array_list" >
+        </activity>
+        <activity
+            android:name=".UserAdapterActivity"
+            android:label="@string/title_activity_user_adapter" >
+        </activity>
     </application>
 
 </manifest>
