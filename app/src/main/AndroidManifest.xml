@@ -24,6 +24,10 @@
             android:name=".UserAdapterActivity"
             android:label="@string/title_activity_user_adapter" >
         </activity>
+        <activity
+            android:name=".ArrayList2Activity"
+            android:label="@string/title_activity_array_list2" >
+        </activity>
     </application>
 
 </manifest>

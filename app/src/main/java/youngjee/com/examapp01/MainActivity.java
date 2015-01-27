@@ -23,15 +23,22 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Button btn_UserAdapter = (Button) findViewById(R.id.btn_UserAdapter);
         btn_UserAdapter.setOnClickListener(this);
 
+        Button btn_ArrAdapter2 = (Button) findViewById(R.id.btn_ArrAdapter2);
+        btn_ArrAdapter2.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View v) {
+        Intent intent = null;
         if (v.getId() == R.id.btn_ArrAdapter){
-            Intent intent = new Intent(this,ArrayListActivity.class);
+            intent = new Intent(this,ArrayListActivity.class);
             startActivity(intent);
-        } else  if (v.getId() ==R.id.btn_UserAdapter){
-            Intent intent = new Intent(this,UserAdapterActivity.class);
+        } else  if (v.getId() ==R.id.btn_UserAdapter) {
+            intent = new Intent(this, UserAdapterActivity.class);
+            startActivity(intent);
+        } else   if (v.getId() ==R.id.btn_ArrAdapter2) {
+            intent = new Intent(this,ArrayList2Activity.class);
             startActivity(intent);
         }
     }
