@@ -49,6 +49,10 @@
             android:name=".DataReceiverActivity"
             android:label="@string/title_activity_data_receiver" >
         </activity>
+        <activity
+            android:name=".TakePictureActivity"
+            android:label="@string/title_activity_take_picture" >
+        </activity>
     </application>
 
 </manifest>
