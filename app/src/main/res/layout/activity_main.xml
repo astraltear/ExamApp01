@@ -8,13 +8,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ArrayAdapterSample"
+        android:text="ArrayAdapter"
         android:id="@+id/btn_ArrAdapter" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="UserAdapterSample"
+        android:text="UserAdapter"
         android:id="@+id/btn_UserAdapter"
         android:layout_below="@+id/btn_ArrAdapter"
         android:layout_alignParentLeft="true"
@@ -23,9 +23,29 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ArrayAdapter2"
+        android:text="ArrayAdapter Data Insert"
         android:id="@+id/btn_ArrAdapter2"
         android:layout_below="@+id/btn_UserAdapter"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asset ImageRead"
+        android:id="@+id/btnAssetImageRead"
+        android:layout_below="@+id/btn_ArrAdapter2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MemoryCheck"
+        android:id="@+id/btnMemoryCheck"
+        android:layout_below="@+id/btnAssetImageRead"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
 </RelativeLayout>

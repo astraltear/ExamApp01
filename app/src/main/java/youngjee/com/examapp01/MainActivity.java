@@ -26,6 +26,12 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Button btn_ArrAdapter2 = (Button) findViewById(R.id.btn_ArrAdapter2);
         btn_ArrAdapter2.setOnClickListener(this);
 
+        Button btnAssetImageRead = (Button) findViewById(R.id.btnAssetImageRead);
+        btnAssetImageRead.setOnClickListener(this);
+
+        Button btnMemoryCheck = (Button) findViewById(R.id.btnMemoryCheck);
+        btnMemoryCheck.setOnClickListener(this);
+
     }
 
     @Override
@@ -40,6 +46,14 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         } else   if (v.getId() ==R.id.btn_ArrAdapter2) {
             intent = new Intent(this,ArrayList2Activity.class);
             startActivity(intent);
+        } else   if (v.getId() ==R.id.btnAssetImageRead) {
+            intent = new Intent(this,AssertImageReadActivity.class);
+            startActivity(intent);
+        } else   if (v.getId() ==R.id.btnMemoryCheck) {
+            intent = new Intent(this,MemoryCheckActivity.class);
+            startActivity(intent);
+
+
         }
     }
 }
