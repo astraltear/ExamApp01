@@ -9,5 +9,8 @@
     <string name="title_activity_array_list2">ArrayList2Activity</string>
     <string name="title_activity_assert_image_read">AssertImageReadActivity</string>
     <string name="title_activity_memory_check">MemoryCheckActivity</string>
+    <string name="title_activity_action_bar">ActionBarActivity</string>
+    <string name="title_activity_data_sender">DataSenderActivity</string>
+    <string name="title_activity_data_receiver">DataReceiverActivity</string>
 
 </resources>

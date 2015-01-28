@@ -36,6 +36,19 @@
             android:name=".MemoryCheckActivity"
             android:label="@string/title_activity_memory_check" >
         </activity>
+        <activity
+            android:name=".ActionBarSampleActivity"
+            android:label="@string/title_activity_action_bar"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".DataSenderActivity"
+            android:label="@string/title_activity_data_sender" >
+        </activity>
+        <activity
+            android:name=".DataReceiverActivity"
+            android:label="@string/title_activity_data_receiver" >
+        </activity>
     </application>
 
 </manifest>

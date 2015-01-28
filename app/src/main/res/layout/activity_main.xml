@@ -47,5 +47,21 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ActionBar"
+        android:id="@+id/btnActionBar"
+        android:layout_below="@+id/btnMemoryCheck"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intent Data Send"
+        android:id="@+id/btnIntentDataSend"
+        android:layout_below="@+id/btnActionBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

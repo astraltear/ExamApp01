@@ -3,11 +3,8 @@ package youngjee.com.examapp01;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
@@ -32,6 +29,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Button btnMemoryCheck = (Button) findViewById(R.id.btnMemoryCheck);
         btnMemoryCheck.setOnClickListener(this);
 
+        Button btnActionBar = (Button) findViewById(R.id.btnActionBar);
+        btnActionBar.setOnClickListener(this);
+
+        Button btnIntentDataSend = (Button) findViewById(R.id.btnIntentDataSend);
+        btnIntentDataSend.setOnClickListener(this);
     }
 
     @Override
@@ -52,8 +54,12 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         } else   if (v.getId() ==R.id.btnMemoryCheck) {
             intent = new Intent(this,MemoryCheckActivity.class);
             startActivity(intent);
-
-
+        } else   if (v.getId() ==R.id.btnActionBar) {
+            intent = new Intent(this,ActionBarSampleActivity.class);
+            startActivity(intent);
+        } else   if (v.getId() ==R.id.btnIntentDataSend) {
+            intent = new Intent(this,DataSenderActivity.class);
+            startActivity(intent);
         }
     }
 }
