@@ -9,16 +9,37 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="camera"
-        android:id="@+id/btn_take_picture"
+        android:text="camera 1"
+        android:id="@+id/btn_take_picture1"
         android:onClick="CameraOnClick"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="camera 2"
+        android:id="@+id/btn_take_picture2"
+        android:onClick="CameraOnClick2"
+        android:layout_below="@+id/btn_take_picture1"
+        android:layout_alignLeft="@+id/btn_take_picture1"
+        android:layout_alignStart="@+id/btn_take_picture1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="camera 3"
+        android:id="@+id/btn_take_picture3"
+        android:onClick="CameraOnClick3"
+        android:layout_below="@+id/btn_take_picture2"
+        android:layout_alignLeft="@+id/btn_take_picture1"
+        android:layout_alignStart="@+id/btn_take_picture1" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/iv_take_picture"
-        android:layout_below="@+id/btn_take_picture"
+        android:layout_below="@+id/btn_take_picture3"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
