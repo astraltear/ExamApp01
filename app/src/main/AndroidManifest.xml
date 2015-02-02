@@ -53,6 +53,10 @@
             android:name=".TakePictureActivity"
             android:label="@string/title_activity_take_picture" >
         </activity>
+        <activity
+            android:name=".TouchEventExamActivity"
+            android:label="@string/title_activity_touch_event_exam" >
+        </activity>
     </application>
 
 </manifest>

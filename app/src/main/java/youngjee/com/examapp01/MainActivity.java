@@ -35,6 +35,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         Button btnIntentDataSend = (Button) findViewById(R.id.btnIntentDataSend);
         btnIntentDataSend.setOnClickListener(this);
+
+        Button btnTouchEvent = (Button) findViewById(R.id.btnTouchEvent);
+        btnTouchEvent.setOnClickListener(this);
     }
 
     @Override
@@ -61,6 +64,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         } else   if (v.getId() ==R.id.btnIntentDataSend) {
             intent = new Intent(this,DataSenderActivity.class);
             startActivity(intent);
+        } else   if (v.getId() ==R.id.btnTouchEvent) {
+            intent = new Intent(this,TouchEventExamActivity.class);
+            startActivity(intent);
+
         }
     }
 

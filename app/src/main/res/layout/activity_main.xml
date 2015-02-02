@@ -76,6 +76,15 @@
         android:layout_alignParentStart="true"
         android:onClick="goTakePicture"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TouchEvent"
+        android:id="@+id/btnTouchEvent"
+        android:layout_below="@+id/btnTakePicture"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="goTakePicture"/>
 
 
 </RelativeLayout>
