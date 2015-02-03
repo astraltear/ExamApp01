@@ -84,7 +84,27 @@
         android:layout_below="@+id/btnTakePicture"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="goTakePicture"/>
+        />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TapHost"
+        android:id="@+id/btnTapHost"
+        android:layout_below="@+id/btnTouchEvent"
+        android:onClick="goTapHost"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MakeDialog"
+        android:id="@+id/btnMakeDialog"
+        android:layout_below="@+id/btnTapHost"
+        android:onClick="goMakeDialog"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
 </RelativeLayout>

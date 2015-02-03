@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TabHost;
 import android.widget.Toast;
 
 
@@ -73,6 +74,16 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     public void goTakePicture(View v){
         Intent intent =new Intent(this,TakePictureActivity.class);
+        startActivity(intent);
+    }
+
+    public void goTapHost(View v) {
+        Intent intent = new Intent(this, TapHostActivity.class);
+        startActivity(intent);
+    }
+
+    public void goMakeDialog(View v) {
+        Intent intent = new Intent(this, MakeDialogActivity.class);
         startActivity(intent);
     }
 }

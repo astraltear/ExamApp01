@@ -14,5 +14,7 @@
     <string name="title_activity_data_receiver">DataReceiverActivity</string>
     <string name="title_activity_take_picture">TakePictureActivity</string>
     <string name="title_activity_touch_event_exam">TouchEventExamActivity</string>
+    <string name="title_activity_tap_host">TapHostActivity</string>
+    <string name="title_activity_make_dialog">MakeDialogActivity</string>
 
 </resources>

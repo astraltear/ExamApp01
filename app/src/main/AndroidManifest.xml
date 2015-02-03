@@ -57,6 +57,14 @@
             android:name=".TouchEventExamActivity"
             android:label="@string/title_activity_touch_event_exam" >
         </activity>
+        <activity
+            android:name=".TapHostActivity"
+            android:label="@string/title_activity_tap_host" >
+        </activity>
+        <activity
+            android:name=".MakeDialogActivity"
+            android:label="@string/title_activity_make_dialog" >
+        </activity>
     </application>
 
 </manifest>
