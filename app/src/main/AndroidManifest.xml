@@ -65,6 +65,10 @@
             android:name=".MakeDialogActivity"
             android:label="@string/title_activity_make_dialog" >
         </activity>
+        <activity
+            android:name=".MakeProgressActivity"
+            android:label="@string/title_activity_make_progress" >
+        </activity>
     </application>
 
 </manifest>

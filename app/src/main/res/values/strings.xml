@@ -16,5 +16,6 @@
     <string name="title_activity_touch_event_exam">TouchEventExamActivity</string>
     <string name="title_activity_tap_host">TapHostActivity</string>
     <string name="title_activity_make_dialog">MakeDialogActivity</string>
+    <string name="title_activity_make_progress">MakeProgressActivity</string>
 
 </resources>

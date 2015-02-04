@@ -86,4 +86,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Intent intent = new Intent(this, MakeDialogActivity.class);
         startActivity(intent);
     }
+
+    public void goMakeProgress(View v) {
+        Intent intent = new Intent(this, MakeProgressActivity.class);
+        startActivity(intent);
+    }
 }
