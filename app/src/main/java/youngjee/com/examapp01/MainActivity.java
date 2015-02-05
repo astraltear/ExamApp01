@@ -3,13 +3,14 @@ package youngjee.com.examapp01;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TabHost;
-import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
+
+    boolean m_close_flag= false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +71,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             startActivity(intent);
 
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        Log.d("MainActivity", "BackPressed");
     }
 
     public void goTakePicture(View v){
