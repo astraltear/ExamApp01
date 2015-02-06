@@ -1,16 +1,46 @@
 package youngjee.com.examapp01;
 
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
 
     boolean m_close_flag= false;
+
+    Handler m_close_handler = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            m_close_flag=false;
+        }
+    };
+
+    @Override
+    public void onBackPressed() {
+        Log.d("MainActivity", m_close_flag+":init");
+        if (m_close_flag == false) {
+            Toast.makeText(this, "취소키를 빨리 한번 더 누르시면 종료됩니다.", Toast.LENGTH_LONG).show();
+            m_close_flag = true;
+            Log.d("MainActivity", m_close_flag+":in if");
+           m_close_handler.sendEmptyMessageDelayed(0, 3000);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    protected void onStop(){
+        super.onStop();
+
+        // 핸드러에 등록된 0번 메세지를 모두 지운다.
+        m_close_handler.removeMessages(0);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,10 +103,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        Log.d("MainActivity", "BackPressed");
-    }
 
     public void goTakePicture(View v){
         Intent intent =new Intent(this,TakePictureActivity.class);
