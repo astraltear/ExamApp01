@@ -17,5 +17,6 @@
     <string name="title_activity_tap_host">TapHostActivity</string>
     <string name="title_activity_make_dialog">MakeDialogActivity</string>
     <string name="title_activity_make_progress">MakeProgressActivity</string>
+    <string name="title_activity_wake_lock">WakeLockActivity</string>
 
 </resources>

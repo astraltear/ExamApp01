@@ -123,4 +123,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Intent intent = new Intent(this, MakeProgressActivity.class);
         startActivity(intent);
     }
+
+    public void goWakeLock(View v) {
+        Intent intent = new Intent(this, WakeLockActivity.class);
+        startActivity(intent);
+    }
 }
