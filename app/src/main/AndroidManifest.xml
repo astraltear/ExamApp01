@@ -76,6 +76,10 @@
             android:name=".WakeLockActivity"
             android:label="@string/title_activity_wake_lock" >
         </activity>
+        <activity
+            android:name=".DynaMicScrollActivity"
+            android:label="@string/title_activity_dyna_mic_scroll" >
+        </activity>
     </application>
 
 </manifest>

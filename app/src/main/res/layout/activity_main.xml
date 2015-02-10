@@ -127,15 +127,25 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="WakeLock amp; Vibrator"
-                android:id="@+id/btn_wakeLock"
-                android:layout_below="@+id/btn_progress"
-                android:onClick="goWakeLock"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WakeLock AND Vibrator"
+            android:id="@+id/btn_wakeLock"
+            android:layout_below="@+id/btn_progress"
+            android:onClick="goWakeLock"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DynamicScroll"
+            android:id="@+id/btn_dynaScroll"
+            android:layout_below="@+id/btn_progress"
+            android:onClick="goDynaScroll"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         </LinearLayout>
      </ScrollView>

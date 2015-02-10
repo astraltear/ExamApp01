@@ -18,5 +18,7 @@
     <string name="title_activity_make_dialog">MakeDialogActivity</string>
     <string name="title_activity_make_progress">MakeProgressActivity</string>
     <string name="title_activity_wake_lock">WakeLockActivity</string>
+    <string name="title_activity_dyna_mic_scroll">DynaMicScrollActivity</string>
+    <string name="title_activity_custom_list">CustomListActivity</string>
 
 </resources>
