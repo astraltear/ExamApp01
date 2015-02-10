@@ -80,6 +80,10 @@
             android:name=".DynaMicScrollActivity"
             android:label="@string/title_activity_dyna_mic_scroll" >
         </activity>
+        <activity
+            android:name=".UILayoutActivity"
+            android:label="@string/title_activity_uilayout" >
+        </activity>
     </application>
 
 </manifest>

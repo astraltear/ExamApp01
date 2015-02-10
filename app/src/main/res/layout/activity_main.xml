@@ -147,6 +147,17 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UI Layout"
+            android:id="@+id/btn_UiLayout"
+            android:layout_below="@+id/btn_dynaScroll"
+            android:onClick="goUiLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
         </LinearLayout>
      </ScrollView>
 </RelativeLayout>

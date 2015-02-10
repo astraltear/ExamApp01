@@ -133,4 +133,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Intent intent = new Intent(this, DynaMicScrollActivity.class);
         startActivity(intent);
     }
+
+    public void goUiLayout(View v) {
+        Intent intent = new Intent(this, UILayoutActivity.class);
+        startActivity(intent);
+    }
 }
