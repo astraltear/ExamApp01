@@ -139,4 +139,15 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goSharedpr(View v) {
+        Intent intent = new Intent(this, SharedPreferencesActivity.class);
+        startActivity(intent);
+    }
+
+    public void goFileWrite(View v){
+        Intent intent = new Intent(this, FileWriteActivity.class);
+        startActivity(intent);
+    }
+
+
 }

@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -83,11 +85,20 @@
         <activity
             android:name=".UILayoutActivity"
             android:label="@string/title_activity_uilayout"
-            android:parentActivityName=".MainActivity">
-            <!--  parent activity meta-data to support 4.0 and lower -->
+            android:parentActivityName=".MainActivity" >
+
+            <!-- parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".SharedPreferencesActivity"
+            android:label="@string/title_activity_shared_preferences" >
+        </activity>
+        <activity
+            android:name=".FileWriteActivity"
+            android:label="@string/title_activity_file_write" >
         </activity>
     </application>
 
