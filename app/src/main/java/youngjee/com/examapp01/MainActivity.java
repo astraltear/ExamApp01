@@ -149,5 +149,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goSqlHandle(View v){
+        Intent intent = new Intent(this, SqlHandleActivity.class);
+        startActivity(intent);
+    }
+
 
 }
