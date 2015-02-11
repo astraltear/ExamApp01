@@ -177,15 +177,26 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SQL Handle"
-                android:id="@+id/btn_sqlHandle"
-                android:layout_below="@+id/btn_FileWrite"
-                android:onClick="goSqlHandle"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SQL Handle"
+            android:id="@+id/btn_sqlHandle"
+            android:layout_below="@+id/btn_FileWrite"
+            android:onClick="goSqlHandle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Implicit Intent"
+            android:id="@+id/btn_ImplicitIntent"
+            android:layout_below="@+id/btn_sqlHandle"
+            android:onClick="goImplicitIntent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         </LinearLayout>
      </ScrollView>

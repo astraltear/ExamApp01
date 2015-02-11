@@ -154,5 +154,12 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goImplicitIntent(View v){
+        Intent intent = new Intent(this, ImplicitActivity.class);
+        startActivity(intent);
+    }
+
+
+
 
 }

@@ -25,5 +25,6 @@
     <string name="title_activity_shared_preferences">SharedPreferencesActivity</string>
     <string name="title_activity_file_write">FileWriteActivity</string>
     <string name="title_activity_sql_handle">SqlHandleActivity</string>
+    <string name="title_activity_implicit">ImplicitActivity</string>
 
 </resources>
