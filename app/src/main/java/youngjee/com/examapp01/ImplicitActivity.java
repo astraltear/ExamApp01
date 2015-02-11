@@ -47,9 +47,14 @@ public class ImplicitActivity extends ActionBarActivity {
         PackageManager packageManager = getPackageManager();
         List activities = packageManager.queryIntentActivities(webIntent, 0);
         Toast.makeText(this,  "activities.size()" + activities.size(),Toast.LENGTH_LONG).show();
+        boolean isIntentSafe =  activities.size() > 0;
+
+        if (isIntentSafe) {
+            Intent chooser = Intent.createChooser(webIntent, "is selected??");
+            startActivity(chooser);
+        }
 
 
-       // startActivity(webIntent);
     }
 
 }
