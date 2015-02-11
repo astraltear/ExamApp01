@@ -21,5 +21,6 @@
     <string name="title_activity_dyna_mic_scroll">DynaMicScrollActivity</string>
     <string name="title_activity_custom_list">CustomListActivity</string>
     <string name="title_activity_uilayout">UILayoutActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

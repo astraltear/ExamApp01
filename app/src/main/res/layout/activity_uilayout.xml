@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="youngjee.com.examapp01.UILayoutActivity">
+
+    <EditText
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="asdf"
+        android:id="@+id/button"/>
+    <!--
+        layout_weight 속성은 남아 있는 공간을 어떤 비율로 나눠가질 것인가를 결정한다.
+        하나의 view에 weight 2를 주고 다른 뷰에 1을 주면 첫번째는 2/3을 차지하고 두번째는 1/3을 차지한다.
+        만약 다른 뷰를 하나 추가하고 weight 1을 주면, 첫번째는 2/4 두번째 세번째는 1/4씩  차지한다.
+        모든 뷰는 기본적으로 weight 가 0이다.
+    -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        <fragment
+            android:name="youngjee.com.examapp01.BlankFragment"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/article_fragment" />
+
+        </LinearLayout>
+</LinearLayout>

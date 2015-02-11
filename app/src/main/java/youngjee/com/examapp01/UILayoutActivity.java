@@ -16,6 +16,11 @@ public class UILayoutActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uilayout);
         Log.d("UILayoutActivity", "Build.VERSION.SDK_INT[" + Build.VERSION.SDK_INT + "]Build.VERSION_CODES.HONEYCOMB[" + Build.VERSION_CODES.HONEYCOMB + "]");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        /*
+        if your minSdkVersion is 11 or higher, instead use :
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        * */
     }
 
     @Override
