@@ -164,7 +164,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-
+    public void goNotification(View v){
+        Intent intent = new Intent(this, TestNotificationActivity.class);
+        startActivity(intent);
+    }
 
 
 

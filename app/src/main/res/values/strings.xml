@@ -27,5 +27,6 @@
     <string name="title_activity_sql_handle">SqlHandleActivity</string>
     <string name="title_activity_implicit">ImplicitActivity</string>
     <string name="title_activity_dialog_call_back">DialogCallBackActivity</string>
+    <string name="title_activity_test_notification">TestNotificationActivity</string>
 
 </resources>
