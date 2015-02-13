@@ -159,6 +159,13 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goDialogCallBack(View v){
+        Intent intent = new Intent(this, DialogCallBackActivity.class);
+        startActivity(intent);
+    }
+
+
+
 
 
 
