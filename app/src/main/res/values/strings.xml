@@ -29,5 +29,6 @@
     <string name="title_activity_dialog_call_back">DialogCallBackActivity</string>
     <string name="title_activity_test_notification">TestNotificationActivity</string>
     <string name="title_activity_auto_complete_text">AutoCompleteTextActivity</string>
+    <string name="title_activity_view_pager_main">ViewPagerMainActivity</string>
 
 </resources>

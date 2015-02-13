@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="youngjee.com.examapp01.ViewPagerMainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="50dip"
+            android:id="@+id/btn_one"
+            android:text="BUTTON1"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="50dip"
+            android:id="@+id/btn_two"
+            android:text="BUTTON2"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="50dip"
+            android:id="@+id/btn_three"
+            android:text="BUTTON3"
+            />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_title_layout"
+        android:id="@+id/pager"></android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>

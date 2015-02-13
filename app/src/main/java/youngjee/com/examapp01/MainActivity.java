@@ -174,6 +174,12 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goViewPager(View v){
+        Intent intent = new Intent(this, ViewPagerMainActivity.class);
+        startActivity(intent);
+    }
+
+
 
 
 }

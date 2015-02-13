@@ -227,6 +227,15 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ViewPager"
+            android:id="@+id/btn_ViewPager"
+            android:layout_below="@+id/btn_AutoCompleteText"
+            android:onClick="goViewPager"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         </LinearLayout>
      </ScrollView>

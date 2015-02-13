@@ -119,6 +119,10 @@
             android:name=".AutoCompleteTextActivity"
             android:label="@string/title_activity_auto_complete_text" >
         </activity>
+        <activity
+            android:name=".ViewPagerMainActivity"
+            android:label="@string/title_activity_view_pager_main" >
+        </activity>
     </application>
 
 </manifest>
