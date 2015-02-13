@@ -169,6 +169,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goAutoCompleteText(View v){
+        Intent intent = new Intent(this, AutoCompleteTextActivity.class);
+        startActivity(intent);
+    }
 
 
 

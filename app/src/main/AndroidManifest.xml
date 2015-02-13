@@ -115,6 +115,10 @@
             android:name=".TestNotificationActivity"
             android:label="@string/title_activity_test_notification" >
         </activity>
+        <activity
+            android:name=".AutoCompleteTextActivity"
+            android:label="@string/title_activity_auto_complete_text" >
+        </activity>
     </application>
 
 </manifest>
