@@ -3,8 +3,11 @@ package youngjee.com.examapp01;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import youngjee.com.examapp01.adapter.PagerAdapterClass;
 
 
 public class ViewPagerMainActivity extends ActionBarActivity implements View.OnClickListener {
@@ -24,7 +27,7 @@ public class ViewPagerMainActivity extends ActionBarActivity implements View.OnC
         setLayout();
 
         mPager = (ViewPager) findViewById(R.id.pager);
-        mPager.setAdapter(new PagerAda);
+        mPager.setAdapter(new PagerAdapterClass(getApplicationContext()));
     }
 
     private void setLayout() {
@@ -39,7 +42,31 @@ public class ViewPagerMainActivity extends ActionBarActivity implements View.OnC
 
     @Override
     public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn_one:
+                setCurrentInflateItem(0);
+                break;
+            case R.id.btn_two:
+                setCurrentInflateItem(1);
+                break;
+            case R.id.btn_three:
+                setCurrentInflateItem(2);
+                break;
+        }
 
+    }
+
+    private void setCurrentInflateItem(int type) {
+        if (type == 0){
+            mPager.setCurrentItem(0);
+            Log.d("ViewPagerMainActivity",""+type );
+        } else if (type == 1){
+            mPager.setCurrentItem(1);
+            Log.d("ViewPagerMainActivity",""+type );
+        } else {
+            mPager.setCurrentItem(2);
+            Log.d("ViewPagerMainActivity",""+type );
+        }
     }
 
 }
