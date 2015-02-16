@@ -31,5 +31,6 @@
     <string name="title_activity_auto_complete_text">AutoCompleteTextActivity</string>
     <string name="title_activity_view_pager_main">ViewPagerMainActivity</string>
     <string name="title_activity_text_watcher">TextWatcherActivity</string>
+    <string name="title_activity_array_spinner">ArraySpinnerActivity</string>
 
 </resources>

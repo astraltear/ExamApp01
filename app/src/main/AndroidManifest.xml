@@ -127,6 +127,10 @@
             android:name=".TextWatcherActivity"
             android:label="@string/title_activity_text_watcher" >
         </activity>
+        <activity
+            android:name=".ArraySpinnerActivity"
+            android:label="@string/title_activity_array_spinner" >
+        </activity>
     </application>
 
 </manifest>

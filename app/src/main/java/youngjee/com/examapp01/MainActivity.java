@@ -184,6 +184,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goArraySpinner(View v){
+        Intent intent = new Intent(this, ArraySpinnerActivity.class);
+        startActivity(intent);
+    }
+
 
 
 }
