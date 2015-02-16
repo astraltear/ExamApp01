@@ -179,6 +179,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goTextWatcher(View v){
+        Intent intent = new Intent(this, TextWatcherActivity.class);
+        startActivity(intent);
+    }
 
 
 

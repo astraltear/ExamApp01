@@ -123,6 +123,10 @@
             android:name=".ViewPagerMainActivity"
             android:label="@string/title_activity_view_pager_main" >
         </activity>
+        <activity
+            android:name=".TextWatcherActivity"
+            android:label="@string/title_activity_text_watcher" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="youngjee.com.examapp01.TextWatcherActivity">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn_check_01"
+        android:id="@+id/et_box_01"
+        android:onClick="onButtonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="이메일"
+        android:clickable="false"
+        android:id="@+id/btn_check_01"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_box_01"
+        android:layout_toLeftOf="@+id/btn_check_02"
+        android:id="@+id/et_box_02"
+        android:onClick="onButtonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="이름"
+        android:clickable="false"
+        android:layout_below="@+id/et_box_01"
+        android:id="@+id/btn_check_02"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="등록"
+        android:layout_below="@+id/et_box_02"
+        android:id="@+id/btn_confirm"
+        android:onClick="onButtonClick"/>
+
+</RelativeLayout>
