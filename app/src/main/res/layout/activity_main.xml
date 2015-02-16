@@ -252,11 +252,20 @@
             android:layout_height="wrap_content"
             android:text="ArraySpinner"
             android:id="@+id/btn_ArraySpinner"
-            android:layout_below="@+id/btn_ArraySpinner"
+            android:layout_below="@+id/btn_TextWatcher"
             android:onClick="goArraySpinner"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CustomListView"
+            android:id="@+id/btn_CustomListView"
+            android:layout_below="@+id/btn_ArraySpinner"
+            android:onClick="goCustomListView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
 
 

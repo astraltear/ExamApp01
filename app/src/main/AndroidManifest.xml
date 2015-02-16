@@ -131,6 +131,10 @@
             android:name=".ArraySpinnerActivity"
             android:label="@string/title_activity_array_spinner" >
         </activity>
+        <activity
+            android:name=".CustomListViewActivity"
+            android:label="@string/title_activity_custom_list_view" >
+        </activity>
     </application>
 
 </manifest>

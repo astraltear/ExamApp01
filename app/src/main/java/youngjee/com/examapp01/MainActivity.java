@@ -189,6 +189,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goCustomListView(View v){
+        Intent intent = new Intent(this, CustomListViewActivity.class);
+        startActivity(intent);
+    }
 
 
 }
