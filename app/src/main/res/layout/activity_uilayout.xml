@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:text="asdf"
         android:id="@+id/button"/>
+
     <!--
         layout_weight 속성은 남아 있는 공간을 어떤 비율로 나눠가질 것인가를 결정한다.
         하나의 view에 weight 2를 주고 다른 뷰에 1을 주면 첫번째는 2/3을 차지하고 두번째는 1/3을 차지한다.
