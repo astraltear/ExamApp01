@@ -7,6 +7,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_toLeftOf="@+id/btn_check_01"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
         android:id="@+id/et_box_01"
         android:onClick="onButtonClick"/>
 
@@ -23,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/et_box_01"
         android:layout_toLeftOf="@+id/btn_check_02"
+        android:inputType="phone"
         android:id="@+id/et_box_02"
         android:onClick="onButtonClick"/>
 
