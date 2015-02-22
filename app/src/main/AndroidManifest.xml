@@ -139,6 +139,10 @@
             android:name=".ArrayAdapterActivity"
             android:label="@string/title_activity_array_adapter" >
         </activity>
+        <activity
+            android:name=".ExpandableListViewActivity"
+            android:label="@string/title_activity_expandable_list_view" >
+        </activity>
     </application>
 
 </manifest>

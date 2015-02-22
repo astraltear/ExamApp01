@@ -34,5 +34,6 @@
     <string name="title_activity_array_spinner">ArraySpinnerActivity</string>
     <string name="title_activity_custom_list_view">CustomListViewActivity</string>
     <string name="title_activity_array_adapter">ArrayAdapterActivity</string>
+    <string name="title_activity_expandable_list_view">ExpandableListViewActivity</string>
 
 </resources>
