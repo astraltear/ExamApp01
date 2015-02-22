@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import youngjee.com.examapp01.adapter.CustomBaseAdapter;
+import youngjee.com.examapp01.adapter.CustomArrayAdapter;
 import youngjee.com.examapp01.dto.InfoClass;
 
 
@@ -32,7 +32,9 @@ public class ArrayAdapterActivity extends ActionBarActivity {
         }
 
         // BaseAdapter연결
-        mListView.setAdapter(new CustomBaseAdapter(this,mCareList));
+//        mListView.setAdapter(new CustomBaseAdapter(this,mCareList));
+        mListView.setAdapter(new CustomArrayAdapter(this,R.layout.list_row,mCareList));
+
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
