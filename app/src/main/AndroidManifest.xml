@@ -147,6 +147,10 @@
             android:name=".ListViewOnItemClickListenerActivity"
             android:label="@string/title_activity_list_view_on_item_click_listener" >
         </activity>
+        <activity
+            android:name=".ListViewHeaderFooterActivity"
+            android:label="@string/title_activity_list_view_header_footer" >
+        </activity>
     </application>
 
 </manifest>

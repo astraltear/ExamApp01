@@ -208,4 +208,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Intent intent = new Intent(this, ListViewOnItemClickListenerActivity.class);
         startActivity(intent);
     }
+
+    public void goListView_HeaderFooter(View v){
+        Intent intent = new Intent(this, ListViewHeaderFooterActivity.class);
+        startActivity(intent);
+    }
+
 }

@@ -38,5 +38,6 @@
     <string name="title_activity_list_view_on_item_click_listener">
         ListViewOnItemClickListenerActivity
     </string>
+    <string name="title_activity_list_view_header_footer">ListViewHeaderFooterActivity</string>
 
 </resources>

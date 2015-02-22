@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class ListViewOnItemClickListenerActivity extends ActionBarActivity {
 
-    private String[] mContents = {"사자","여우","곰","호랑이","타조","말","돼지","사슴","살쾡이","푸우"};
+    private String[] mContents = {"사자","여우","곰","호랑이","타조","말","돼지","사슴","살쾡이","푸우","퓨마","백호","늑대","여우","물개","고래","새우","고등어"};
     private ListView mListView ;
 
     @Override
