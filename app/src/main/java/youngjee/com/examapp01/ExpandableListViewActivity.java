@@ -17,6 +17,7 @@ public class ExpandableListViewActivity extends ActionBarActivity {
     private ArrayList<ArrayList<String >> mChildList = null;
     private ArrayList<String> mChildListContent = null;
     private ExpandableListView expandableListView = null;
+    private BaseExpandableAdapter baseExpandableAdapter = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +42,24 @@ public class ExpandableListViewActivity extends ActionBarActivity {
         mChildList.add(mChildListContent);
         mChildList.add(mChildListContent);
 
-        expandableListView.setAdapter(new BaseExpandableAdapter(this, mGroupList, mChildList));
+        baseExpandableAdapter = new BaseExpandableAdapter(this, mGroupList, mChildList);
+
+        expandableListView.setAdapter(baseExpandableAdapter);
+
+        // 그룹 indicator삭제
+        expandableListView.setGroupIndicator(null);
+
+        // 그룹 갯수 얻기
+        final int groupCount = baseExpandableAdapter.getGroupCount();
+
+        // 처음 시작시 그룹 모두 열기
+        for (int i =0 ; i <groupCount; i++) {
+            expandableListView.expandGroup(i);
+            // 처음 시작시 그룹 모두 닫기
+            //expandableListView.collapseGroup(i);
+        }
+
+
 
 
         // 그룹 클릭 했을 경우 이벤트
@@ -75,6 +93,13 @@ public class ExpandableListViewActivity extends ActionBarActivity {
             @Override
             public void onGroupExpand(int groupPosition) {
                 Toast.makeText(getApplicationContext(), "g Expand = " + groupPosition, Toast.LENGTH_SHORT).show();
+
+                for (int i =0 ; i <groupCount; i++){
+                    if(!(i==groupPosition)) {
+                        expandableListView.collapseGroup(i);
+                    }
+                }
+
             }
         });
     }
