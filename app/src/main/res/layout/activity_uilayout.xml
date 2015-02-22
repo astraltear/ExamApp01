@@ -13,7 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="asdf"
-        android:id="@+id/button"/>
+        android:id="@+id/button"
+        android:background="@drawable/selector_btn_click"/>
 
     <!--
         layout_weight 속성은 남아 있는 공간을 어떤 비율로 나눠가질 것인가를 결정한다.
