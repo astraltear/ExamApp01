@@ -135,6 +135,10 @@
             android:name=".CustomListViewActivity"
             android:label="@string/title_activity_custom_list_view" >
         </activity>
+        <activity
+            android:name=".ArrayAdapterActivity"
+            android:label="@string/title_activity_array_adapter" >
+        </activity>
     </application>
 
 </manifest>

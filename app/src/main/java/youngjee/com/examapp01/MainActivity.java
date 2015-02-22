@@ -194,5 +194,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goArrayAdapter2(View v){
+        Intent intent = new Intent(this, ArrayAdapterActivity.class);
+        startActivity(intent);
+    }
+
+
 
 }

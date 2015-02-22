@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="ListView입니다"
+            android:id="@+id/tv_title"/>
+        <Button
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:id="@+id/btn_button"/>
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_toLeftOf="@+id/btn_button"
+            android:background="@drawable/ic_launcher"
+            android:id="@+id/iv_image"/>
+        <CheckBox
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_toLeftOf="@+id/iv_image"
+            android:focusable="false"
+            android:id="@+id/cb_box"/>
+        </RelativeLayout>
+</RelativeLayout>
