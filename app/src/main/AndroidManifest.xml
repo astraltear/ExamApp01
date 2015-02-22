@@ -143,6 +143,10 @@
             android:name=".ExpandableListViewActivity"
             android:label="@string/title_activity_expandable_list_view" >
         </activity>
+        <activity
+            android:name=".ListViewOnItemClickListenerActivity"
+            android:label="@string/title_activity_list_view_on_item_click_listener" >
+        </activity>
     </application>
 
 </manifest>

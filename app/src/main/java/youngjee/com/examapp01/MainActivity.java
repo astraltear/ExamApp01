@@ -204,5 +204,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-
+    public void goListView_OnItemCLick(View v){
+        Intent intent = new Intent(this, ListViewOnItemClickListenerActivity.class);
+        startActivity(intent);
+    }
 }
