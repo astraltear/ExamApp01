@@ -20,11 +20,17 @@ public class ListViewOnItemClickListenerActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_on_item_click_listener);
 
-        Log.d("ListViewOnItemClick:", getApplicationContext().toString());
-        Log.d("ListViewOnItemClick:", this.toString());
+        Log.d("getApplicationContext:", getApplicationContext().toString());
+        Log.d("getBaseContext:", getBaseContext().toString());
+        Log.d("this:", this.toString());
+        /*
+        *   getApplicationContext:(20834): android.app.Application@41d0d300
+            getBaseContext:(20834): android.app.ContextImpl@41f86de8
+            this:(20834): youngjee.com.examapp01.ListViewOnItemClickListenerActivity@41f86290
+        * */
 
         mListView = (ListView) findViewById(R.id.lv_list);
-        mListView.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,mContents));
+        mListView.setAdapter(new ArrayAdapter<String>(getBaseContext(),android.R.layout.simple_list_item_1,mContents));
         mListView.setOnItemClickListener(mItemClickListener);
 
     }
