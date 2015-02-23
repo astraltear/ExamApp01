@@ -24,7 +24,11 @@ public class ListViewOnItemClickListenerActivity extends ActionBarActivity {
         Log.d("getBaseContext:", getBaseContext().toString());
         Log.d("this:", this.toString());
         /*
-        *   getApplicationContext:(20834): android.app.Application@41d0d300
+        *
+        *  ApplicationContext는 어플리케이션 전체를 가리키는 글로벌한 Context이며
+        *  this는 activity 자기 자신이며
+        *  BaseContext는 activity의 멤버변수이다.
+           getApplicationContext:(20834): android.app.Application@41d0d300
             getBaseContext:(20834): android.app.ContextImpl@41f86de8
             this:(20834): youngjee.com.examapp01.ListViewOnItemClickListenerActivity@41f86290
         * */
