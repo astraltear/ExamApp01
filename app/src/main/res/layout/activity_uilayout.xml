@@ -2,19 +2,113 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="youngjee.com.examapp01.UILayoutActivity">
-
-    <EditText
-        android:layout_width="152dp"
+    android:orientation="vertical"
+    tools:context="youngjee.com.examapp01.UILayoutActivity"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText" />
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText" />
 
-    <Button
-        android:layout_width="wrap_content"
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asdf"
+            android:id="@+id/button"
+            android:background="@drawable/selector_btn_click"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="asdf"
-        android:id="@+id/button"
-        android:background="@drawable/selector_btn_click"/>
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목은 뭘까요"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다음 그림은 두 개의 TextView"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="147dp"
+            android:layout_height="188dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@drawable/ic_menu_add"
+                android:layout_weight="0.27" />
+        </LinearLayout>
+
+        <Button
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:text="testbutton"/>
+
+        <Button
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:text="testbutton2"/>
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="testbutton3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New CheckBox"
+            android:gravity="right"
+            android:id="@+id/checkBox" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New RadioButton"
+            android:layout_gravity="right"
+            android:id="@+id/radioButton" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/textView6"
+            android:layout_weight="0.85"
+            android:gravity="center_vertical|center|right" />
+
+
+    </LinearLayout>
+
 
     <!--
         layout_weight 속성은 남아 있는 공간을 어떤 비율로 나눠가질 것인가를 결정한다.
