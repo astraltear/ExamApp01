@@ -6,14 +6,19 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.GridView;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class ListViewOnItemClickListenerActivity extends ActionBarActivity {
 
     private String[] mContents = {"사자","여우","곰","호랑이","타조","말","돼지","사슴","살쾡이","푸우","퓨마","백호","늑대","여우","물개","고래","새우","고등어"};
+    private String [] gridContents={"111","222","333","444","555","666","777","888","999","000","AAA","BBB","CCC","DDD","EEE","FFF","GGG","HHH","III","JJJ","KKK"};
     private ListView mListView ;
+    private Spinner spinner;
+    private GridView gridView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +41,26 @@ public class ListViewOnItemClickListenerActivity extends ActionBarActivity {
         mListView = (ListView) findViewById(R.id.lv_list);
         mListView.setAdapter(new ArrayAdapter<String>(getBaseContext(),android.R.layout.simple_list_item_1,mContents));
         mListView.setOnItemClickListener(mItemClickListener);
+
+        gridView = (GridView) findViewById(R.id.gridView);
+        gridView.setAdapter(new ArrayAdapter<String>(this,R.layout.gridview_item_layout_01,gridContents));
+        gridView.setOnItemClickListener(mItemClickListener);
+
+        spinner = (Spinner) findViewById(R.id.spinner2);
+        spinner.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,mContents));
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                TextView textView = (TextView)view.findViewById(android.R.id.text1);
+                Toast.makeText(getBaseContext(), textView.getText().toString(),Toast.LENGTH_SHORT).show();
+                //textView.setText("REPLACE");
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
     }
 
