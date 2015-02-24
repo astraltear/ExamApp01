@@ -151,6 +151,10 @@
             android:name=".ListViewHeaderFooterActivity"
             android:label="@string/title_activity_list_view_header_footer" >
         </activity>
+        <activity
+            android:name=".DateTimerPickerActivity"
+            android:label="@string/title_activity_date_timer_picker" >
+        </activity>
     </application>
 
 </manifest>

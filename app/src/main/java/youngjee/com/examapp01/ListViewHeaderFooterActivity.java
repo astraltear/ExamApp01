@@ -100,7 +100,6 @@ public class ListViewHeaderFooterActivity extends ActionBarActivity {
             viewHolder = null;
         }
 
-
         class ViewHolder {
             public TextView tv_title =null;
         }

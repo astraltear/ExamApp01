@@ -307,6 +307,15 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DateTimerPicker"
+            android:id="@+id/btn_DateTimerPicker"
+            android:layout_below="@+id/btn_ListView_HeaderFooter"
+            android:onClick="goDateTimerPicker"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
 
 

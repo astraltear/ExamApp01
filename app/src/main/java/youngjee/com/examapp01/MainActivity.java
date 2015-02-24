@@ -213,7 +213,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Intent intent = new Intent(this, ListViewHeaderFooterActivity.class);
         startActivity(intent);
     }
-
+    public void goDateTimerPicker(View v){
+        Intent intent = new Intent(this, DateTimerPickerActivity.class);
+        startActivity(intent);
+    }
 
 
 }
