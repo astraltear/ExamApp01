@@ -297,15 +297,15 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ListView_HeaderFooter"
-                android:id="@+id/btn_ListView_HeaderFooter"
-                android:layout_below="@+id/btn_ListView_OnItemCLick"
-                android:onClick="goListView_HeaderFooter"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ListView_HeaderFooter"
+            android:id="@+id/btn_ListView_HeaderFooter"
+            android:layout_below="@+id/btn_ListView_OnItemCLick"
+            android:onClick="goListView_HeaderFooter"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
 
 

@@ -39,5 +39,6 @@
         ListViewOnItemClickListenerActivity
     </string>
     <string name="title_activity_list_view_header_footer">ListViewHeaderFooterActivity</string>
+    <string name="title_activity_interactive_list_view">InteractiveListViewActivity</string>
 
 </resources>

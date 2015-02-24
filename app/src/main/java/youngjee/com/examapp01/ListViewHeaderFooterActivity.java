@@ -75,8 +75,8 @@ public class ListViewHeaderFooterActivity extends ActionBarActivity {
             View v = convertView;
 
             if (v == null){
-                viewHolder = new ViewHolder();
                 v = inflater.inflate(resourceID, null);
+                viewHolder = new ViewHolder();
                 viewHolder.tv_title = (TextView) v.findViewById(R.id.tv_title);
 
                 v.setTag(viewHolder);
