@@ -42,5 +42,6 @@
     <string name="title_activity_interactive_list_view">InteractiveListViewActivity</string>
     <string name="title_activity_date_timer_picker">DateTimerPickerActivity</string>
     <string name="title_activity_make_tab1">MakeTab1Activity</string>
+    <string name="title_activity_make_flipper">MakeFlipperActivity</string>
 
 </resources>

@@ -320,13 +320,12 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Make Tab1"
-            android:id="@+id/btn_makeTab1"
+            android:text="ViewFlipper"
+            android:id="@+id/btn_makeFlipper"
             android:layout_below="@+id/btn_DateTimerPicker"
-            android:onClick="goMakeTab1"
+            android:onClick="goMakeFlipper"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
-
 
 
         </LinearLayout>

@@ -155,6 +155,10 @@
             android:name=".DateTimerPickerActivity"
             android:label="@string/title_activity_date_timer_picker" >
         </activity>
+        <activity
+            android:name=".MakeFlipperActivity"
+            android:label="@string/title_activity_make_flipper" >
+        </activity>
     </application>
 
 </manifest>

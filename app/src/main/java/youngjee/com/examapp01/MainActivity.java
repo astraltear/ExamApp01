@@ -218,6 +218,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goMakeFlipper(View v){
+        Intent intent = new Intent(this, MakeFlipperActivity.class);
+        startActivity(intent);
+    }
+
 
 
 
