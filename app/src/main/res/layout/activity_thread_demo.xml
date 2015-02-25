@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="youngjee.com.examapp01.ThreadDemoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress Bar"/>
+    <ProgressBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progressBar"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Thread 사용안함"
+        android:id="@+id/btnNoThread"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="잘못된 Thread 사용 예\n Worker Thread에서 UI조작함"
+        android:id="@+id/btnThread01"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Thread 01 \n View.post()이용"
+        android:id="@+id/btnThread02"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Thread 02 \n Activity.runOnUiThread() 이용"
+        android:id="@+id/btnThread03"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Thread 03 \n Handler객체 사용"
+        android:id="@+id/btnThread04"/>
+
+
+</LinearLayout>

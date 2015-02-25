@@ -328,6 +328,16 @@
             android:layout_alignParentStart="true" />
 
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ThreadDemo"
+            android:id="@+id/btn_makeThread"
+            android:layout_below="@+id/btn_makeFlipper"
+            android:onClick="goMakeThread"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
         </LinearLayout>
      </ScrollView>
 </RelativeLayout>

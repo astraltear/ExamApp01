@@ -159,6 +159,10 @@
             android:name=".MakeFlipperActivity"
             android:label="@string/title_activity_make_flipper" >
         </activity>
+        <activity
+            android:name=".ThreadDemoActivity"
+            android:label="@string/title_activity_thread_demo" >
+        </activity>
     </application>
 
 </manifest>

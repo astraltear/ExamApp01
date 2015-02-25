@@ -223,6 +223,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goMakeThread(View v){
+        Intent intent = new Intent(this, ThreadDemoActivity.class);
+        startActivity(intent);
+    }
 
 
 
