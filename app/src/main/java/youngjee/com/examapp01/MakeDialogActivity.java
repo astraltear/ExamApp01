@@ -2,7 +2,9 @@ package youngjee.com.examapp01;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -10,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 
 
 public class MakeDialogActivity extends ActionBarActivity {
@@ -128,4 +131,155 @@ public class MakeDialogActivity extends ActionBarActivity {
         }
         return  dialog;
     }
+
+    private Dialog mMainDialog;
+    private CheckBox[] mCheckBoxs;
+
+    public void onDialog4(View view) {
+        mMainDialog = createDialog();
+        mMainDialog.show();
+    }
+
+    private AlertDialog createDialog() {
+        final View innerView = getLayoutInflater().inflate(R.layout.dialog_layout, null);
+        AlertDialog.Builder ab = new AlertDialog.Builder(this);
+        ab.setTitle("Title");
+        ab.setView(innerView);
+
+        mCheckBoxs = new CheckBox[]{
+                (CheckBox) innerView.findViewById(R.id.cb_check_all),
+                (CheckBox) innerView.findViewById(R.id.cb_01),
+                (CheckBox) innerView.findViewById(R.id.cb_02),
+                (CheckBox) innerView.findViewById(R.id.cb_03),
+                (CheckBox) innerView.findViewById(R.id.cb_04)
+        };
+
+        ab.setPositiveButton("확인",new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                setDismiss(mMainDialog);
+            }
+        });
+
+        ab.setNegativeButton("취소", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                setDismiss(mMainDialog);
+            }
+        });
+
+        mCheckBoxs[0].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                allChecked(mCheckBoxs, mCheckBoxs[0].isChecked());
+            }
+        });
+
+        return ab.create();
+    }
+
+    private void allChecked(CheckBox[] mCheckBoxs, boolean checked) {
+        for (CheckBox checkBox : mCheckBoxs){
+            checkBox.setChecked(checked);
+        }
+    }
+
+    private void setDismiss(Dialog mMainDialog) {
+        if(mMainDialog != null && mMainDialog.isShowing()){
+            mMainDialog.dismiss();
+        }
+    }
+
+    private Handler mHandler;
+    private ProgressDialog progressDialog;
+
+    public void onDialog5(View view){
+        mHandler = new Handler();
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                progressDialog = ProgressDialog.show(MakeDialogActivity.this, "", "기다려 >.<", true);
+
+                mHandler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            if(progressDialog != null && progressDialog.isShowing()){
+                                progressDialog.dismiss();
+                            }
+                        } catch (Exception e){
+                            e.printStackTrace();
+                        }
+                    }
+                }, 3000);
+            }
+        });
+    }
+
+    private AlertDialog basicDialog = null;
+    public void onBasicDialog(View view) {
+        basicDialog = createOtherBasicDialog();
+        basicDialog.show();
+    }
+
+    private AlertDialog createOtherBasicDialog() {
+        AlertDialog.Builder abBuilder = new AlertDialog.Builder(this);
+        abBuilder.setTitle("베이직 다이얼로그");
+        abBuilder.setMessage("베이지 다이얼로그 내용");
+        abBuilder.setCancelable(false);
+        abBuilder.setIcon(getResources().getDrawable(R.drawable.ic_menu_search));
+
+        abBuilder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                setBasicDismiss(basicDialog);
+            }
+        });
+
+        abBuilder.setNegativeButton("취소", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                setBasicDismiss(basicDialog);
+            }
+        });
+
+        return abBuilder.create();
+    }
+
+    private void setBasicDismiss(AlertDialog basicDialog) {
+        if (basicDialog != null && basicDialog.isShowing()){
+            basicDialog.dismiss();
+        }
+    }
+
+    public void onInflateDialog(View view){
+        basicDialog = createOtherInflateDialog();
+        basicDialog.show();
+    }
+
+    private AlertDialog createOtherInflateDialog() {
+        final View innerView = getLayoutInflater().inflate(R.layout.dialog_layout, null);
+        AlertDialog.Builder abBuilder = new AlertDialog.Builder(this);
+        abBuilder.setTitle("InflateDialog");
+        abBuilder.setView(innerView);
+
+        abBuilder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                setBasicDismiss(basicDialog);
+            }
+        });
+
+        abBuilder.setNegativeButton("취소", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                setBasicDismiss(basicDialog);
+            }
+        });
+
+        return abBuilder.create();
+    }
+
+
+
 }
