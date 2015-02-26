@@ -73,4 +73,12 @@
         android:layout_centerHorizontal="true"
         android:onClick="onOtherProgress"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity Popup"
+        android:id="@+id/btn_dialog9"
+        android:layout_below="@+id/btn_dialog8"
+        android:layout_centerHorizontal="true"
+        android:onClick="onActivityPopup"/>
 </RelativeLayout>

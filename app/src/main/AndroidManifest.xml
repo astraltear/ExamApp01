@@ -167,6 +167,11 @@
             android:name=".AsyncTaskDemoActivity"
             android:label="@string/title_activity_async_task_demo" >
         </activity>
+        <activity
+            android:name=".PopupActivity"
+            android:label="@string/title_activity_popup"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
     </application>
 
 </manifest>

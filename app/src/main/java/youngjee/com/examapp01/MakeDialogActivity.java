@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBarActivity;
@@ -295,7 +296,7 @@ public class MakeDialogActivity extends ActionBarActivity {
         otherProgressDialog.setButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                if (otherProgressDialog != null && otherProgressDialog.isShowing()){
+                if (otherProgressDialog != null && otherProgressDialog.isShowing()) {
                     otherProgressDialog.dismiss();
                 }
             }
@@ -316,6 +317,9 @@ public class MakeDialogActivity extends ActionBarActivity {
         }
     };
 
+    public void onActivityPopup(View v){
+        startActivity(new Intent(this,PopupActivity.class));
+    }
 
 
 }
