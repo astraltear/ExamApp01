@@ -44,5 +44,6 @@
     <string name="title_activity_make_tab1">MakeTab1Activity</string>
     <string name="title_activity_make_flipper">MakeFlipperActivity</string>
     <string name="title_activity_thread_demo">ThreadDemoActivity</string>
+    <string name="title_activity_async_task_demo">AsyncTaskDemoActivity</string>
 
 </resources>

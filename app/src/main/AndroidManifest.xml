@@ -163,6 +163,10 @@
             android:name=".ThreadDemoActivity"
             android:label="@string/title_activity_thread_demo" >
         </activity>
+        <activity
+            android:name=".AsyncTaskDemoActivity"
+            android:label="@string/title_activity_async_task_demo" >
+        </activity>
     </application>
 
 </manifest>

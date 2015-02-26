@@ -228,6 +228,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goAsyncTask(View v){
+        Intent intent = new Intent(this, AsyncTaskDemoActivity.class);
+        startActivity(intent);
+    }
 
 
 
