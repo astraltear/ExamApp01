@@ -36,10 +36,23 @@ public class AsyncTaskDemoActivity extends ActionBarActivity implements View.OnC
     }
 
     /*
-    * AsyncTask클래스는 항상 Subclassing 해서 사용해야 함
+    * AsyncTask클래스는 항상 Subclassing 해서 사용해야 함.인스턴스는 항상 UI 스레드에서 생성
     * 작업에 사용할 data의 자료형 : String
     * 작업 진행 표시를 위해 사용할 인자 : Integer
     * 작업의 결과를 표현할 자료형 : Long
+    * http://cfile4.uf.tistory.com/image/14798B0F4B987FDE48907E
+    * 또, AsyncTask 클래스는 background 작업의 시작과 background 작업 중 진행정보의 UI스레드 표현을 위해 다음과 같은 메소드를 제공한다.
+    * final AsyncTask<…> execute(Params… params): Background 작업을 시작한다.
+    * 꼭 UI스레드에서 호출하여야 함. 가변인자를 받아들임으로 임의의 개수의 인자를 전달할 수 있으며, 인자들은 doInBackground(…) 메소드로 전달된다.
+    * final void publishProgress(Progress... values): Background 작업 수행 중 작업의 진행도를 UI 스레드에 전달 함. doInBackground(…)메소드 내부에서만 호출.
+    * 마지막으로 AsyncTask 사용해 background작업을 구현 시 꼭 지켜야 하는 사항들이다.
+    * AsyncTask클래스는 항상 subclassing 하여 사용하여야 한다.
+    * AsyncTask 인스턴스는 항상 UI 스레드에서 생성한다.
+    * AsyncTask:execute(…) 메소드는 항상 UI 스레드에서 호출한다.
+    * AsyncTask:execute(…) 메소드는 생성된 AsyncTask 인스턴스 별로 꼭 한번만 사용 가능하다.
+    * 같은 인스턴스가 또 execute(…)를 실행하면 exception이 발생하며, 이는 AsyncTask:cancel(…) 메소드에 의해 작업완료 되기 전 취소된 AsyncTask 인스턴스라도 마찬가지이다.
+    * 그럼으로 background 작업이 필요할 때마다 new 연산자를 이용해 해당 작업에 대한 AsyncTask 인스턴스를 새로 생성해야 한다.
+    * AsyncTask의 callback 함수 onPreExecute(), doInBackground(…), onProgressUpdate(…), onPostExecute(…)는 직접 호출 하면 안 된다. (꼭 callback으로만 사용)
     * */
     private class DoComplecatedJob extends AsyncTask<String, Integer, Long>{
 
@@ -59,11 +72,10 @@ public class AsyncTaskDemoActivity extends ActionBarActivity implements View.OnC
                 SystemClock.sleep(new Integer(params[i]));
                 totalTimeSpent += new Long(params[i]);
 
-                // onProgressUpdate callback을 호출 해 background 작업의 실행결과를 UI에 표현함
                 int result = (int) (((1+i)/(float)numberOfParmas)*100)  ;
-
                 Log.d("result", "===>"+result);
 
+                // onProgressUpdate callback을 호출 해 background 작업의 실행결과를 UI에 표현함
                 publishProgress(result);
             }
 
