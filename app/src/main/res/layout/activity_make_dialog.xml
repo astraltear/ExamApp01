@@ -31,7 +31,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dialog4"
+        android:text="Inflate Dialog"
         android:id="@+id/btn_dialog4"
         android:layout_below="@+id/btn_dialog3"
         android:layout_centerHorizontal="true"
@@ -40,7 +40,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dialog5"
+        android:text="Progress Dialog"
         android:id="@+id/btn_dialog5"
         android:layout_below="@+id/btn_dialog4"
         android:layout_centerHorizontal="true"
@@ -63,5 +63,14 @@
         android:layout_below="@+id/btn_dialog6"
         android:layout_centerHorizontal="true"
         android:onClick="onInflateDialog"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other Progress"
+        android:id="@+id/btn_dialog8"
+        android:layout_below="@+id/btn_dialog7"
+        android:layout_centerHorizontal="true"
+        android:onClick="onOtherProgress"/>
 
 </RelativeLayout>

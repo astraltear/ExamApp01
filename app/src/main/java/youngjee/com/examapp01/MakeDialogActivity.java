@@ -263,22 +263,58 @@ public class MakeDialogActivity extends ActionBarActivity {
         abBuilder.setTitle("InflateDialog");
         abBuilder.setView(innerView);
 
-        abBuilder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+        abBuilder.setPositiveButton("Activity 자체 종료", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                setBasicDismiss(basicDialog);
+                //setBasicDismiss(basicDialog);
+                MakeDialogActivity.this.finish();
             }
         });
 
-        abBuilder.setNegativeButton("취소", new DialogInterface.OnClickListener() {
+        abBuilder.setNegativeButton("Activity 자체 종료", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                setBasicDismiss(basicDialog);
+                //setBasicDismiss(basicDialog);
+                MakeDialogActivity.this.finish();
             }
         });
 
         return abBuilder.create();
     }
+
+    private Handler otherHandle;
+    private ProgressDialog otherProgressDialog;
+
+    public void onOtherProgress(View v) {
+        otherHandle = new Handler();
+
+        otherProgressDialog = new ProgressDialog(this);
+        otherProgressDialog.setMessage("Other!!!!!!!!");
+        otherProgressDialog.setCancelable(false); // back button 활성화 여부
+
+        otherProgressDialog.setButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                if (otherProgressDialog != null && otherProgressDialog.isShowing()){
+                    otherProgressDialog.dismiss();
+                }
+            }
+        });
+
+        otherProgressDialog.show();
+
+        otherHandle.postDelayed(mRunner, 5000);
+
+    }
+
+    private Runnable mRunner = new Runnable() {
+        @Override
+        public void run() {
+            if (otherProgressDialog != null && otherProgressDialog.isShowing()){
+                otherProgressDialog.dismiss();
+            }
+        }
+    };
 
 
 
