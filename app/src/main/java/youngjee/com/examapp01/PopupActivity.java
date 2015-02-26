@@ -1,7 +1,6 @@
 package youngjee.com.examapp01;
 
 import android.app.Activity;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
