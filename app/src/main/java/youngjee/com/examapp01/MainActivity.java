@@ -233,6 +233,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goPopupWindow(View v){
+        Intent intent = new Intent(this, PopupWindowActivity.class);
+        startActivity(intent);
+    }
 
 
 

@@ -337,7 +337,6 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -345,6 +344,16 @@
             android:id="@+id/btn_makeAsyncTask"
             android:layout_below="@+id/btn_makeThread"
             android:onClick="goAsyncTask"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="팝업윈도우"
+            android:id="@+id/btn_popupWindow"
+            android:layout_below="@+id/btn_makeAsyncTask"
+            android:onClick="goPopupWindow"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 

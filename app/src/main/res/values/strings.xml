@@ -46,5 +46,6 @@
     <string name="title_activity_thread_demo">ThreadDemoActivity</string>
     <string name="title_activity_async_task_demo">AsyncTaskDemoActivity</string>
     <string name="title_activity_popup">PopupActivity</string>
+    <string name="title_activity_popup_window">PopupWindowActivity</string>
 
 </resources>

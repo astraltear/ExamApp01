@@ -170,7 +170,11 @@
         <activity
             android:name=".PopupActivity"
             android:label="@string/title_activity_popup"
-            android:theme="@android:style/Theme.Dialog">
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".PopupWindowActivity"
+            android:label="@string/title_activity_popup_window" >
         </activity>
     </application>
 
