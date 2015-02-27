@@ -1,6 +1,9 @@
 package youngjee.com.examapp01;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract;
@@ -9,6 +12,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import java.util.List;
 
 
 public class DataSenderActivity extends ActionBarActivity implements View.OnClickListener {
@@ -24,6 +30,9 @@ public class DataSenderActivity extends ActionBarActivity implements View.OnClic
         Button button1 = (Button) findViewById(R.id.btn_implicit);
         button1.setOnClickListener(this);
 
+        Button button2 = (Button) findViewById(R.id.btn_isAvailable);
+        button2.setOnClickListener(this);
+
     }
 
     @Override
@@ -33,10 +42,18 @@ public class DataSenderActivity extends ActionBarActivity implements View.OnClic
             intent.putExtra("NO",123);
             intent.putExtra("PW","testpw");
             startActivityForResult(intent,934);
-        } else if ( v.getId() == R.id.btn_implicit ){
+        } else if ( v.getId() == R.id.btn_implicit ) {
             startActivity(new Intent("young.jee.Implicit.Intent"));
+
+        } else if(v.getId() == R.id.btn_isAvailable){
+            boolean flag_sms = availableSMS(getBaseContext());
+            boolean flag_mms = availableMMS(getBaseContext());
+            boolean flag_call = availableCALL(getBaseContext());
+
+            Toast.makeText(this,"available SMS["+flag_sms+"]MMS["+flag_mms+"]CALL["+flag_call+"]",Toast.LENGTH_LONG).show();
         }
     }
+
 
     public void goTelNo(View v) {
         Intent contactIntent = new Intent(Intent.ACTION_PICK, Uri.parse("content://contacts"));
@@ -65,7 +82,70 @@ public class DataSenderActivity extends ActionBarActivity implements View.OnClic
             int column = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
             Log.d("DataSenderActivity", "["+cursor.getString(column)+"]");
 
-
         }
     }
+
+    private boolean availableSMS(Context context) {
+        PackageManager pac = context.getPackageManager();
+        Uri smsUri = Uri.parse("sms:");
+        Intent smsIntent = new Intent(Intent.ACTION_SENDTO, smsUri);
+        List<ResolveInfo> list = pac.queryIntentActivities(smsIntent, PackageManager.COMPONENT_ENABLED_STATE_DEFAULT);
+
+        String packageName ="";
+        for (int i = 0 ; i<list.size(); i++) {
+            ResolveInfo firstInfo = list.get(i);
+            packageName = firstInfo.activityInfo.applicationInfo.packageName;
+            Log.d("availableSMS", packageName);
+        }
+
+        if (packageName ==  null || ("").equals(packageName)){
+            return  false;
+        } else {
+            return true;
+        }
+    }
+
+    private boolean availableMMS(Context baseContext) {
+        PackageManager pac = baseContext.getPackageManager();
+        Uri mmsUri = Uri.parse("mmsto:");
+        Intent mmsIntent = new Intent(Intent.ACTION_VIEW, mmsUri);
+        List<ResolveInfo> list = pac.queryIntentActivities(mmsIntent, PackageManager.COMPONENT_ENABLED_STATE_DEFAULT);
+
+        String packageName ="";
+        for (int i = 0 ; i<list.size();i++) {
+            ResolveInfo firstInfo = list.get(i);
+            packageName = firstInfo.activityInfo.applicationInfo.packageName;
+            Log.d("availableMMS", packageName);
+        }
+
+        if (packageName ==  null || ("").equals(packageName)){
+            return  false;
+        } else {
+            return true;
+        }
+    }
+
+    private boolean availableCALL(Context baseContext) {
+        PackageManager pac = baseContext.getPackageManager();
+        Uri callUri = Uri.parse("tel:");
+        Intent callIntent = new Intent(Intent.ACTION_CALL, callUri);
+        List<ResolveInfo> list = pac.queryIntentActivities(callIntent, PackageManager.COMPONENT_ENABLED_STATE_DEFAULT);
+
+
+        String packageName ="";
+        for (int i = 0 ; i<list.size();i++) {
+            ResolveInfo firstInfo = list.get(i);
+            packageName = firstInfo.activityInfo.applicationInfo.packageName;
+            Log.d("availableCALL", packageName);
+        }
+
+        if (packageName ==  null || ("").equals(packageName)){
+            return  false;
+        } else {
+            return true;
+        }
+    }
+
+
+
 }

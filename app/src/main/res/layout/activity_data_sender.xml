@@ -30,4 +30,12 @@
         android:layout_height="wrap_content"
         android:text="Implicit Intent Call"
         android:layout_below="@id/btn_getTelNo"/>
+
+    <Button
+        android:id="@+id/btn_isAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intent Available"
+        android:layout_below="@+id/btn_implicit"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
