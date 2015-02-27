@@ -243,5 +243,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goRotateActivity(View v){
+        Intent intent = new Intent(this, RotateExamActivity.class);
+        startActivity(intent);
+    }
 
 }

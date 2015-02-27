@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -17,6 +17,7 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -53,8 +54,9 @@
             android:name=".DataReceiverActivity"
             android:label="@string/title_activity_data_receiver" >
             <intent-filter>
-                <action android:name="young.jee.Implicit.Intent"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="young.jee.Implicit.Intent" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
@@ -183,6 +185,11 @@
         <activity
             android:name=".IntentExamActivity"
             android:label="@string/title_activity_intent_exam" >
+        </activity>
+        <activity
+            android:name=".RotateExamActivity"
+            android:label="@string/title_activity_rotate_exam"
+            android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
     </application>
 

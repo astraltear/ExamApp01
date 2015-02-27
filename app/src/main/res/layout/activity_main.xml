@@ -357,7 +357,6 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -368,6 +367,15 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rotate Activity"
+            android:id="@+id/btn_rotate"
+            android:layout_below="@+id/btn_intentExam"
+            android:onClick="goRotateActivity"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
         </LinearLayout>
      </ScrollView>
 </RelativeLayout>
