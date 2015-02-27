@@ -38,7 +38,13 @@
         android:layout_below="@+id/btn_tel"
         android:text="goSms"
         android:onClick="goSms"/>
-
+    <Button
+        android:id="@+id/btn_video"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_sms"
+        android:text="goVideo"
+        android:onClick="goVideo"/>
 
 
 </RelativeLayout>

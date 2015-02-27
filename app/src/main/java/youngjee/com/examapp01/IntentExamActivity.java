@@ -61,6 +61,14 @@ public class IntentExamActivity extends ActionBarActivity {
 
     }
 
+    public void goVideo(View v) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        Uri uri = Uri.parse("http://www.youtube.com/embed/Eydfdsrerewerw");
+//        intent.setDataAndType(uri, "video/*");   // 2번째 인자로 MIME type을 주면 video를 재생할 수 있는 플레이어들만 목록에 나타난다.
+        intent.setData(uri); // 인자없이 호출하면 인터넷 브라우저와 youtube 앱이 서제스트 된다. 유투브는 주소를 보고 인지한 듯
+        startActivity(intent);
+    }
+
     /*
 // 이메일 발송
 Uri uri = Uri.parse("mailto:xxx@abc.com");

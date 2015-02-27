@@ -23,4 +23,11 @@
         android:onClick="goTelNo"
         android:layout_below="@+id/btn_IntentSender"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_implicit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Implicit Intent Call"
+        android:layout_below="@id/btn_getTelNo"/>
 </RelativeLayout>

@@ -21,6 +21,9 @@ public class DataSenderActivity extends ActionBarActivity implements View.OnClic
         Button button = (Button) findViewById(R.id.btn_IntentSender);
         button.setOnClickListener(this);
 
+        Button button1 = (Button) findViewById(R.id.btn_implicit);
+        button1.setOnClickListener(this);
+
     }
 
     @Override
@@ -30,6 +33,8 @@ public class DataSenderActivity extends ActionBarActivity implements View.OnClic
             intent.putExtra("NO",123);
             intent.putExtra("PW","testpw");
             startActivityForResult(intent,934);
+        } else if ( v.getId() == R.id.btn_implicit ){
+            startActivity(new Intent("young.jee.Implicit.Intent"));
         }
     }
 
