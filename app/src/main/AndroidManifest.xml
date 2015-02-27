@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -175,6 +176,10 @@
         <activity
             android:name=".PopupWindowActivity"
             android:label="@string/title_activity_popup_window" >
+        </activity>
+        <activity
+            android:name=".IntentExamActivity"
+            android:label="@string/title_activity_intent_exam" >
         </activity>
     </application>
 

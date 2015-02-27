@@ -238,6 +238,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goIntentExam(View v){
+        Intent intent = new Intent(this, IntentExamActivity.class);
+        startActivity(intent);
+    }
 
 
 }

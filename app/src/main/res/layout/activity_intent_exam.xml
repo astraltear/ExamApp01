@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="youngjee.com.examapp01.IntentExamActivity">
+
+    <Button
+        android:id="@+id/btn_web"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="goWeb"
+        android:onClick="goWeb"/>
+    <Button
+        android:id="@+id/btn_gMap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_web"
+        android:text="goGmap"
+        android:onClick="goGmap"/>
+    <Button
+        android:id="@+id/btn_gMap2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_gMap"
+        android:text="goGmap2"
+        android:onClick="goGmap2"/>
+    <Button
+        android:id="@+id/btn_tel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_gMap2"
+        android:text="goTel"
+        android:onClick="goTel"/>
+    <Button
+        android:id="@+id/btn_sms"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_tel"
+        android:text="goSms"
+        android:onClick="goSms"/>
+
+
+
+</RelativeLayout>
