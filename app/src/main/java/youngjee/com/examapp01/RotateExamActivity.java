@@ -1,12 +1,15 @@
 package youngjee.com.examapp01;
 
+import android.app.Activity;
 import android.content.res.Configuration;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class RotateExamActivity extends ActionBarActivity {
+public class RotateExamActivity extends Activity {
 
     /*
     * 화면이 회전되면 activity가 종료되고 다시 실행된다.
@@ -28,6 +31,16 @@ public class RotateExamActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        /*
+         AndroidManifest에 아래 의 두 개의 내용을 적용하면 반투명 효과가 나온다고 하나 작동안함
+          아래의 activity theme만 설정하면 투명으로는 작동함
+         android:theme="@android:style/Theme.Translucent">
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND,WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
+*/
         setContentView(R.layout.activity_rotate_exam);
 
         TextView textView = (TextView) findViewById(R.id.tv_info);
