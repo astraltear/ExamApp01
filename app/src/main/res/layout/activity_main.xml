@@ -397,6 +397,15 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BroadCastReceiver"
+            android:id="@+id/btn_makeBroadCastReceiver"
+            android:layout_below="@+id/btn_makeService"
+            android:onClick="goBroadCastReceiver"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
         </LinearLayout>
      </ScrollView>
 </RelativeLayout>

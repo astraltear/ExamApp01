@@ -51,5 +51,6 @@
     <string name="title_activity_rotate_exam">RotateExamActivity</string>
     <string name="title_activity_test_configure">TestConfigureActivity</string>
     <string name="title_activity_service_demo">ServiceDemoActivity</string>
+    <string name="title_activity_go_broad_cast_receiver">goBroadCastReceiver</string>
 
 </resources>

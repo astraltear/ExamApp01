@@ -1,5 +1,6 @@
 package youngjee.com.examapp01;
 
+import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
@@ -258,6 +259,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goBroadCastReceiver(View v){
+        Intent intent = new Intent(this, BroadcastReceiverActivity.class);
+        startActivity(intent);
+    }
 
 
 }

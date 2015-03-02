@@ -208,6 +208,20 @@
             android:enabled="true"
             android:exported="true" >
         </service>
+
+        <activity
+            android:name=".BroadcastReceiverActivity"
+            android:label="@string/title_activity_go_broad_cast_receiver" >
+        </activity>
+
+        <receiver
+            android:name=".receiver.TestReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="youngjee.recevier.sender" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
