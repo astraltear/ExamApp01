@@ -387,6 +387,16 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="make Service"
+            android:id="@+id/btn_makeService"
+            android:layout_below="@+id/btn_testConfiure"
+            android:onClick="goMakeService"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
         </LinearLayout>
      </ScrollView>
 </RelativeLayout>

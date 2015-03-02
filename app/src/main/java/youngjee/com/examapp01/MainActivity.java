@@ -253,5 +253,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goMakeService(View v){
+        Intent intent = new Intent(this, ServiceDemoActivity.class);
+        startActivity(intent);
+    }
+
+
 
 }

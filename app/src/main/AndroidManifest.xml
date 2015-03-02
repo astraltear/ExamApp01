@@ -198,6 +198,16 @@
             android:name=".TestConfigureActivity"
             android:label="@string/title_activity_test_configure" >
         </activity>
+        <activity
+            android:name=".ServiceDemoActivity"
+            android:label="@string/title_activity_service_demo" >
+        </activity>
+
+        <service
+            android:name=".service.MusicService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
     </application>
 
 </manifest>

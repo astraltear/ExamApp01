@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="youngjee.com.examapp01.ServiceDemoActivity">
+
+   <Button
+       android:id="@+id/btn_play"
+       android:text="Play Music"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:text="Stop Music"
+        android:layout_below="@+id/btn_play"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
