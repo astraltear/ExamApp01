@@ -30,7 +30,11 @@ public class IntentExamActivity extends ActionBarActivity {
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        Log.d("IntentExamActivity", "onConfigurationChanged:"+this.getResources().getConfiguration().orientation);
+        if (newConfig.orientation==Configuration.ORIENTATION_PORTRAIT){
+            Log.d("IntentExamActivity", "onConfigurationChanged:ORIENTATION_PORTRAIT");
+        }else if(newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            Log.d("IntentExamActivity", "onConfigurationChanged:ORIENTATION_LANDSCAPE");
+        }
     }
 
     @Override

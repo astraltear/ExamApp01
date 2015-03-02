@@ -248,4 +248,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goTestConfigure(View v){
+        Intent intent = new Intent(this, TestConfigureActivity.class);
+        startActivity(intent);
+    }
+
+
 }

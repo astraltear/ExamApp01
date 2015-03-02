@@ -55,6 +55,7 @@
             android:label="@string/title_activity_data_receiver" >
             <intent-filter>
                 <action android:name="young.jee.Implicit.Intent" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -183,14 +184,19 @@
         </activity>
         <activity
             android:name=".IntentExamActivity"
-            android:label="@string/title_activity_intent_exam">
+            android:label="@string/title_activity_intent_exam" >
         </activity>
         <activity
             android:name=".RotateExamActivity"
-            android:label="@string/title_activity_rotate_exam"
-            android:configChanges="orientation|keyboardHidden|screenSize" >
-            <!--android:theme="@android:style/Theme.Translucent" -->
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_rotate_exam" >
 
+            <!-- android:theme="@android:style/Theme.Translucent" -->
+
+        </activity>
+        <activity
+            android:name=".TestConfigureActivity"
+            android:label="@string/title_activity_test_configure" >
         </activity>
     </application>
 

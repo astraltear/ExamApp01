@@ -49,5 +49,6 @@
     <string name="title_activity_popup_window">PopupWindowActivity</string>
     <string name="title_activity_intent_exam">IntentExamActivity</string>
     <string name="title_activity_rotate_exam">RotateExamActivity</string>
+    <string name="title_activity_test_configure">TestConfigureActivity</string>
 
 </resources>
