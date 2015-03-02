@@ -1,17 +1,42 @@
 package youngjee.com.examapp01;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 public class IntentExamActivity extends ActionBarActivity {
+
+    /*
+    * 화면 회전시 onCreate, onDestroy 두 메소드가 계속 호출되게 된다.
+    * onConfigurationChanged 메소드는 AndroidManifest.xml에 아래 설정이되어 있지 않는다면 설정하지 않는다.
+    * android:configChanges="orientation|screenSize"
+    *  두 가지는 서로 배타적이게 작동한다.
+    *  화면이 회전을 한다면 무조건 Create,Destroy가 반복적으로 호출한다.
+    *  이걸 방지하기위해 xml에 항목을 추가하고 onConfigurationChanged 메소드를 override하면 해당 메소드가 호출되며, Create,Destroy가 호출되지 않는다.
+    * */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intent_exam);
+        Log.d("IntentExamActivity", "onCreate");
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        Log.d("IntentExamActivity", "onConfigurationChanged:"+this.getResources().getConfiguration().orientation);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("IntentExamActivity", "onDestroy");
     }
 
     public void goWeb(View v) {

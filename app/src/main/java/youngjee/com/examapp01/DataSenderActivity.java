@@ -54,6 +54,15 @@ public class DataSenderActivity extends ActionBarActivity implements View.OnClic
         }
     }
 
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if(hasFocus == true){
+            Toast.makeText(getBaseContext(),"Visible", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(getBaseContext(),"IN Visible", Toast.LENGTH_SHORT).show();
+        }
+    }
 
     public void goTelNo(View v) {
         Intent contactIntent = new Intent(Intent.ACTION_PICK, Uri.parse("content://contacts"));
