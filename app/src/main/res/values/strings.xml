@@ -52,5 +52,7 @@
     <string name="title_activity_test_configure">TestConfigureActivity</string>
     <string name="title_activity_service_demo">ServiceDemoActivity</string>
     <string name="title_activity_go_broad_cast_receiver">goBroadCastReceiver</string>
+    <string name="title_activity_alarm_manager">AlarmManagerActivity</string>
+    <string name="title_activity_call_alarm_result">CallAlarmResultActivity</string>
 
 </resources>

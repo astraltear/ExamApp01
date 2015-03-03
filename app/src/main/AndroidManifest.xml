@@ -222,6 +222,19 @@
                 <action android:name="youngjee.recevier.sender" />
             </intent-filter>
         </receiver>
+
+        <activity
+            android:name=".AlarmManagerActivity"
+            android:label="@string/title_activity_alarm_manager" >
+        </activity>
+        <activity
+            android:name=".CallAlarmResultActivity"
+            android:label="@string/title_activity_call_alarm_result" >
+            <intent-filter>
+                <action android:name="youngjee.alarmmanager"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
