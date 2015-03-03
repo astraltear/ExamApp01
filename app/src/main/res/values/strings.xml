@@ -55,5 +55,6 @@
     <string name="title_activity_alarm_manager">AlarmManagerActivity</string>
     <string name="title_activity_call_alarm_result">CallAlarmResultActivity</string>
     <string name="title_activity_thread_demo2">ThreadDemo2Activity</string>
+    <string name="title_activity_use_handler">UseHandlerActivity</string>
 
 </resources>

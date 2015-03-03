@@ -274,6 +274,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goUseHandler(View v){
+        Intent intent = new Intent(this, UseHandlerActivity.class);
+        startActivity(intent);
+    }
 
 
 }

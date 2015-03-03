@@ -427,6 +427,15 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use Handler"
+            android:id="@+id/btn_useHandler"
+            android:layout_below="@+id/btn_makethreadDemo2"
+            android:onClick="goUseHandler"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
         </LinearLayout>
      </ScrollView>
 </RelativeLayout>

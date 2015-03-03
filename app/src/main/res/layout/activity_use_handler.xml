@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="youngjee.com.examapp01.UseHandlerActivity">
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btn_thread_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_count"
+        android:text="Thread Start!!"
+        android:onClick="useHandleClick"
+        />
+    <Button
+        android:id="@+id/btn_thread_stop_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_thread_start"
+        android:text="Send Thread Stop Message!!!"
+        android:onClick="useHandleClick"/>
+
+    <Button
+        android:id="@+id/btn_various"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_thread_stop_message"
+        android:text="핸들러를 띄우는 여러가지 방법"
+        android:onClick="useHandleClick"/>
+
+</RelativeLayout>

@@ -240,6 +240,10 @@
             android:name=".ThreadDemo2Activity"
             android:label="@string/title_activity_thread_demo2" >
         </activity>
+        <activity
+            android:name=".UseHandlerActivity"
+            android:label="@string/title_activity_use_handler" >
+        </activity>
     </application>
 
 </manifest>
