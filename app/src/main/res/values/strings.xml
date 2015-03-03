@@ -54,5 +54,6 @@
     <string name="title_activity_go_broad_cast_receiver">goBroadCastReceiver</string>
     <string name="title_activity_alarm_manager">AlarmManagerActivity</string>
     <string name="title_activity_call_alarm_result">CallAlarmResultActivity</string>
+    <string name="title_activity_thread_demo2">ThreadDemo2Activity</string>
 
 </resources>

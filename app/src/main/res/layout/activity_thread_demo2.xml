@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="youngjee.com.examapp01.ThreadDemo2Activity">
+
+  <TextView
+      android:id="@+id/tv_number"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:onClick="onButtonClick"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Thread 시작!!"/>
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:onClick="onButtonClick"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Thread 정지!!"/>
+
+    <Button
+        android:id="@+id/btn_postDelayed"
+        android:onClick="onButtonClick"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="핸들러 포스트딜레이디"/>
+
+    <Button
+        android:id="@+id/btn_timerTask"
+        android:onClick="onButtonClick"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TimerTask"/>
+</LinearLayout>
