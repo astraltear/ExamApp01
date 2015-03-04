@@ -12,4 +12,8 @@ public class AddressInfoClass {
         this.contact = contact;
         this.email = email;
     }
+
+    public int get_id() {
+        return _id;
+    }
 }

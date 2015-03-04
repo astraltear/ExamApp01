@@ -52,7 +52,8 @@ public class SqlHandleActivity extends ActionBarActivity {
         mListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                boolean result = mDbOpenHelper.deleteColumn(position + 1);
+
+                boolean result = mDbOpenHelper.deleteColumn(infoClassArrayList.get(position).get_id());
 
                 if (result) {
                     infoClassArrayList.remove(position);
@@ -97,7 +98,6 @@ public class SqlHandleActivity extends ActionBarActivity {
                 dbCustomAdapter.notifyDataSetChanged();
                 break;
         }
-
     }
 
     private void setLayout() {

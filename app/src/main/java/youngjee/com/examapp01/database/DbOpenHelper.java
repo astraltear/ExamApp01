@@ -21,7 +21,7 @@ public class DbOpenHelper {
     }
 
     public  DbOpenHelper open() throws SQLException {
-        mDBHelper = new DatabaseHelper(mCtx, "addressbook.db", null, 1);
+        mDBHelper = new DatabaseHelper(mCtx, "addressbook.db", null, 2);
         mDB = mDBHelper.getWritableDatabase();
         return this;
     }
@@ -42,6 +42,9 @@ public class DbOpenHelper {
         return mDB.query("address", null, null, null, null, null, null);
     }
 
+    public  boolean deleteColumn(long id){
+        return mDB.delete("address", "_id=" + id, null) > 0;
+    }
     /*
     * not use only references
     * */
@@ -53,9 +56,7 @@ public class DbOpenHelper {
         return mDB.update("address", values, "_id=" + id, null) > 0;
     }
 
-    public  boolean deleteColumn(long id){
-        return mDB.delete("address", "_id=" + id, null) > 0;
-    }
+
 
     public  boolean deleteColumn(String number){
         return mDB.delete("address", "contact=" + number, null) > 0;
@@ -81,6 +82,9 @@ public class DbOpenHelper {
             super(context, name, factory, version);
         }
 
+        /*
+        * 최초 DB를 만들때 한번만 호출된다.
+        * */
         @Override
         public void onCreate(SQLiteDatabase db) {
             StringBuffer buffer = new StringBuffer();
@@ -95,6 +99,9 @@ public class DbOpenHelper {
             db.execSQL(buffer.toString());
         }
 
+       /*
+       * 버전이 업데이트 되었을 경우 DB를 다시 만들어 준다.
+       * */
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             db.execSQL("DROP TABLE IF EXISTS address");
