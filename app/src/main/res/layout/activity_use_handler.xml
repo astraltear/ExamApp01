@@ -31,6 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_thread_stop_message"
         android:text="핸들러를 띄우는 여러가지 방법"
-        android:onClick="useHandleClick"/>
+        android:onClick="useHandleClick"
+        android:background="#00000000"/>
 
 </RelativeLayout>
