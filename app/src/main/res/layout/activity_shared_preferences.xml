@@ -32,4 +32,20 @@
         android:layout_below="@+id/btn_save"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:layout_below="@+id/btn_restore"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_deleteALL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete ALL"
+        android:layout_below="@id/btn_delete"
+        android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>
