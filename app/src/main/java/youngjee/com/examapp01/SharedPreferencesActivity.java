@@ -33,22 +33,26 @@ public class SharedPreferencesActivity extends ActionBarActivity  implements Vie
         if ( v.getId() ==R.id.btn_save ){
             SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPref.edit();
-            editor.putString("SPKEY", "TEST SharedPreferences");
+            editor.putString("SPKEY", "save preferences");
             editor.commit();
         } else  if ( v.getId() ==R.id.btn_restore ){
             SharedPreferences sharedPref =  getPreferences(Context.MODE_PRIVATE);
 
             TextView tv_sharedInfo = (TextView) findViewById(R.id.sharedInfo);
-            tv_sharedInfo.setText( sharedPref.getString("SPKEY","DEFAULT") );
+            tv_sharedInfo.setText( sharedPref.getString("SPKEY","default preferences") );
 
         } else  if ( v.getId() ==R.id.btn_delete ) {
-            SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
-            SharedPreferences.Editor editor = pref.edit();
+            SharedPreferences sharedPref =  getPreferences(Context.MODE_PRIVATE);
+//            SharedPreferences sharedPref = getSharedPreferences("pref", MODE_PRIVATE);
+
+            SharedPreferences.Editor editor = sharedPref.edit();
             editor.remove("SPKEY");
             editor.commit();
         } else  if ( v.getId() ==R.id.btn_deleteALL ) {
-            SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
-            SharedPreferences.Editor editor = pref.edit();
+            SharedPreferences sharedPref =  getPreferences(Context.MODE_PRIVATE);
+//            SharedPreferences sharedPref = getSharedPreferences("pref", MODE_PRIVATE);
+
+            SharedPreferences.Editor editor = sharedPref.edit();
             editor.clear();
             editor.commit();
         }
