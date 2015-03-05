@@ -279,5 +279,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goFileMng(View v){
+        Intent intent = new Intent(this, FileManagerActivity.class);
+        startActivity(intent);
+    }
+
+
 
 }

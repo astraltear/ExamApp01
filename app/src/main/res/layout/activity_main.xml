@@ -436,6 +436,17 @@
             android:onClick="goUseHandler"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File Manage"
+            android:id="@+id/btn_fileMng"
+            android:layout_below="@+id/btn_useHandler"
+            android:onClick="goFileMng"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
         </LinearLayout>
      </ScrollView>
 </RelativeLayout>
