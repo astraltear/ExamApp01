@@ -284,6 +284,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goClickLongClick(View v){
+        Intent intent = new Intent(this, ClickNLongClickActivity.class);
+        startActivity(intent);
+    }
 
 
 }
