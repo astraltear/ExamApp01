@@ -24,12 +24,14 @@ public class FileManagerActivity extends ActionBarActivity {
 
         TextView tv_dirpath = (TextView) findViewById(R.id.tv_dirpath);
         TextView tv_filepath = (TextView) findViewById(R.id.tv_filepath);
+        TextView tv_sdcard = (TextView) findViewById(R.id.tv_sdcard);
 
         File dir = makeDirectory(SAVEPATH);
         File file = makeFile(dir, (SAVEPATH +"/"+ SAVEFILEPATH));
 
         tv_dirpath.setText( getAbsolutePath(dir)  );
         tv_filepath.setText( getAbsolutePath(file)  );
+        tv_sdcard.setText(Environment.getExternalStorageDirectory()+"");
 
         String content = "가나다라마바사아자";
         writeFile(file, content.getBytes());
