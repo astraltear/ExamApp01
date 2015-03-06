@@ -457,7 +457,6 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -468,7 +467,15 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
-
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Info GPS"
+            android:id="@+id/btn_deviceInfoGPS"
+            android:layout_below="@+id/btn_imageSendSMS"
+            android:onClick="goDeviceInfoGPS"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
         </LinearLayout>
      </ScrollView>
 </RelativeLayout>

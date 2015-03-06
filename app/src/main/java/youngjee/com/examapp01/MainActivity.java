@@ -294,4 +294,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goDeviceInfoGPS(View v){
+        Intent intent = new Intent(this, DeviceInfoGPSActivity.class);
+        startActivity(intent);
+    }
+
 }

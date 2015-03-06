@@ -59,5 +59,6 @@
     <string name="title_activity_file_manager">FileManagerActivity</string>
     <string name="title_activity_click_nlong_click">ClickNLongClickActivity</string>
     <string name="title_activity_image_send_sms">ImageSendSMSActivity</string>
+    <string name="title_activity_device_info_gps">DeviceInfoGPSActivity</string>
 
 </resources>
