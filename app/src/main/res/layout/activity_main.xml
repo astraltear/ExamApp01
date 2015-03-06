@@ -476,6 +476,19 @@
             android:onClick="goDeviceInfoGPS"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="앱 설치여부 조사"
+                android:id="@+id/btn_checkInstallApp"
+                android:layout_below="@+id/btn_deviceInfoGPS"
+                android:onClick="goCheckInstallApp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
         </LinearLayout>
      </ScrollView>
 </RelativeLayout>

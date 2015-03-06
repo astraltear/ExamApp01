@@ -299,4 +299,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goCheckInstallApp(View v){
+        Intent intent = new Intent(this, CheckInstallAppActivity.class);
+        startActivity(intent);
+    }
+
 }
