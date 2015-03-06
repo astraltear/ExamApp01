@@ -21,6 +21,11 @@ public class CheckInstallAppActivity extends ActionBarActivity {
             ApplicationInfo appInfo = pi.applicationInfo;
             Log.d("CheckInstallAppActivity", "패키지가 설치되었습니다.");
 
+
+
+            // OR
+            pm.getApplicationInfo(CHECK_PACKAGE_NAME.toLowerCase(), PackageManager.GET_META_DATA);
+
         } catch (PackageManager.NameNotFoundException e) {
             Log.d("CheckInstallAppActivity", "패키지가 설치 되지 않았습니다.");
         }
