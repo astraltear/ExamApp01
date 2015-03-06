@@ -31,6 +31,7 @@ public class DeviceInfoGPSActivity extends ActionBarActivity {
         String countryISO = tm.getSimCountryIso();
         boolean isNetworkRoaming = tm.isNetworkRoaming();
         String systemLanguage = getBaseContext().getResources().getConfiguration().locale.getLanguage();
+        String telNo = tm.getLine1Number();
 
         LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
         String provider = locationManager.getBestProvider(setCriteria(), true);
@@ -61,6 +62,7 @@ public class DeviceInfoGPSActivity extends ActionBarActivity {
         .append("Language:").append(systemLanguage).append("\n")
         .append("provider:").append(provider).append("\n")
         .append("country:").append(country).append("\n")
+        .append("telNo:").append(telNo).append("\n")
         ;
 
         tv_deviceInfo.setText(buffer.toString());
