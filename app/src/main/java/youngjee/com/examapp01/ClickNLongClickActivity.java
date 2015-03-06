@@ -1,5 +1,6 @@
 package youngjee.com.examapp01;
 
+import android.os.Build;
 import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -7,6 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ClickNLongClickActivity extends ActionBarActivity {
@@ -25,6 +27,8 @@ public class ClickNLongClickActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_click_nlong_click);
+
+        setBuildInfo();
 
         mHandler = new Handler();
         mTouchSlop = ViewConfiguration.get(this).getScaledTouchSlop();
@@ -72,6 +76,31 @@ public class ClickNLongClickActivity extends ActionBarActivity {
                 return false;
             }
         });
+    }
+
+    private void setBuildInfo() {
+        TextView tv_build_info = (TextView) findViewById(R.id.tv_build_info);
+
+        StringBuffer buffer = new StringBuffer();
+        buffer.append("Build.BOARD:").append(Build.BOARD).append("\n")
+                .append("Build.BRAND:").append(Build.BRAND).append("\n")
+                .append("Build.CPU_ABI:").append(Build.CPU_ABI).append("\n")
+                .append("Build.DEVICE:").append(Build.DEVICE).append("\n")
+                .append("Build.DISPLAY:").append(Build.DISPLAY).append("\n")
+                .append("Build.FINGERPRINT:").append(Build.FINGERPRINT).append("\n")
+                .append("Build.HOST:").append(Build.HOST).append("\n")
+                .append("Build.ID:").append(Build.ID).append("\n")
+                .append("Build.MANUFACTURER:").append(Build.MANUFACTURER).append("\n")
+                .append("Build.MODEL:").append(Build.MODEL).append("\n")
+                .append("Build.PRODUCT:").append(Build.PRODUCT).append("\n")
+                .append("Build.TAGS:").append(Build.TAGS).append("\n")
+                .append("Build.TYPE:").append(Build.TYPE).append("\n")
+                .append("Build.USER:").append(Build.USER).append("\n")
+                .append("Build.HARDWARE:").append(Build.HARDWARE).append("\n")
+                .append("Build.SERIAL:").append(Build.SERIAL).append("\n")
+                .append("Build.VERSION.RELEASE:").append(Build.VERSION.RELEASE).append("\n");
+
+        tv_build_info.setText(buffer.toString());
     }
 
     class CheckForLongPress implements Runnable{
