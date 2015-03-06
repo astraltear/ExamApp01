@@ -289,5 +289,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goImageSendSMS(View v){
+        Intent intent = new Intent(this, ImageSendSMSActivity.class);
+        startActivity(intent);
+    }
 
 }

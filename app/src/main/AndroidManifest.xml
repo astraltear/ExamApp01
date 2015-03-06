@@ -252,6 +252,10 @@
             android:name=".ClickNLongClickActivity"
             android:label="@string/title_activity_click_nlong_click" >
         </activity>
+        <activity
+            android:name=".ImageSendSMSActivity"
+            android:label="@string/title_activity_image_send_sms" >
+        </activity>
     </application>
 
 </manifest>
