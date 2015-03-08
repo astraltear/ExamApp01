@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.api.GoogleAPI;
 import com.google.api.GoogleAPIException;
 import com.google.api.translate.Language;
 import com.google.api.translate.Translate;
@@ -31,15 +32,17 @@ public class GoogleTransActivity extends ActionBarActivity {
             public void onClick(View v) {
                 /*
                 * https://code.google.com/p/google-api-translate-java/
-                * 아래코드는 작동하지 않는다.아래의 두 개의 메소드가 있어야만 translate를 사용할 수 있다.
-                *GoogleAPI.setHttpReferrer("http://yoursite.com");
-                * GoogleAPI.setKey( Enter your API key here );
+                * 이 어플리케이션은 작동하지 않는다.
+                * 사용방법이 아래와 같이 심플한 버전에서 Oauth및 다른 방법으로 완전히 교체됨
                 * */
+                GoogleAPI.setHttpReferrer("http://darap.blog.me");
+                GoogleAPI.setKey("AIzaSyBxOWtXZIKWsjjcDXVjyxPuGet6f1dcsKQ");
 
                 String from = et_trans_text.getText().toString();
                 String after="";
                 try {
                     after = Translate.DEFAULT.execute(from, Language.AUTO_DETECT, Language.KOREAN);
+
                 } catch (GoogleAPIException e) {
                     e.printStackTrace();
                 }
