@@ -61,5 +61,6 @@
     <string name="title_activity_image_send_sms">ImageSendSMSActivity</string>
     <string name="title_activity_device_info_gps">DeviceInfoGPSActivity</string>
     <string name="title_activity_check_install_app">CheckInstallAppActivity</string>
+    <string name="title_activity_url_conn_test">UrlConnTestActivity</string>
 
 </resources>

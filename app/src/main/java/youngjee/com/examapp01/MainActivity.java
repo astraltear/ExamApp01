@@ -304,4 +304,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goConnNet(View v){
+        Intent intent = new Intent(this, UrlConnTestActivity.class);
+        startActivity(intent);
+    }
+
+
+
 }
