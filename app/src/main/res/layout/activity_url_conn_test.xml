@@ -4,6 +4,10 @@
     android:layout_height="match_parent"
     tools:context="youngjee.com.examapp01.UrlConnTestActivity">
 
-
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="HttpUrlConnection을 사용한 샘플 Logcat에 출력함 "/>
 
 </RelativeLayout>

@@ -487,16 +487,25 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="네트워크시 주의점"
-                android:id="@+id/btn_connNet"
-                android:layout_below="@+id/btn_checkInstallApp"
-                android:onClick="goConnNet"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="네트워크시 주의점"
+            android:id="@+id/btn_connNet"
+            android:layout_below="@+id/btn_checkInstallApp"
+            android:onClick="goConnNet"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="번역기 만들기"
+            android:id="@+id/btn_trans"
+            android:layout_below="@+id/btn_connNet"
+            android:onClick="goGoogleTrans"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
         </LinearLayout>
      </ScrollView>
 </RelativeLayout>

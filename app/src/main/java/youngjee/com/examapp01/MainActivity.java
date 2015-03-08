@@ -309,6 +309,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goGoogleTrans(View v){
+        Intent intent = new Intent(this, GoogleTransActivity.class);
+        startActivity(intent);
+    }
 
 
 }
