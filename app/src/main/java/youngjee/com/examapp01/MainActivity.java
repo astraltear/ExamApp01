@@ -314,12 +314,15 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-
     public void goDownloader(View v){
         Intent intent = new Intent(this, DownloaderDemoActivity.class);
         startActivity(intent);
     }
 
+    public void goMp3Player(View v){
+        Intent intent = new Intent(this, MP3PlayerDemoActivity.class);
+        startActivity(intent);
+    }
 
 
 }

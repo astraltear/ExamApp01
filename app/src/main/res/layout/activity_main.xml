@@ -517,6 +517,15 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MP3 플레이어"
+            android:id="@+id/btn_mp3playerDemo"
+            android:layout_below="@+id/btn_downloader"
+            android:onClick="goMp3Player"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         </LinearLayout>
      </ScrollView>

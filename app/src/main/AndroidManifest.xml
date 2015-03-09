@@ -279,6 +279,10 @@
             android:name=".DownloaderDemoActivity"
             android:label="@string/title_activity_downloader_demo" >
         </activity>
+        <activity
+            android:name=".MP3PlayerDemoActivity"
+            android:label="@string/title_activity_mp3_player_demo" >
+        </activity>
     </application>
 
 </manifest>

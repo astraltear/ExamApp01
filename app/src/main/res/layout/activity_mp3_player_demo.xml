@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="youngjee.com.examapp01.MP3PlayerDemoActivity">
+
+    <TextView
+        android:id="@+id/tv__fileInfo"
+        android:text="파일위치"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_mp3Url"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv__fileInfo"/>
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_mp3Url"
+        android:text="불러오기"/>
+    <CheckBox
+        android:id="@+id/cb_repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_open"/>
+    <TextView
+        android:id="@+id/tv_repeat"
+        android:text="반복재생"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_open"
+        android:layout_toRightOf="@+id/cb_repeat"
+        android:layout_alignBaseline="@+id/cb_repeat"/>
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb_repeat"
+        android:text="재생"/>
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb_repeat"
+        android:layout_toRightOf="@+id/btn_play"
+        android:text="정지"/>
+
+</RelativeLayout>
