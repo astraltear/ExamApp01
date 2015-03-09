@@ -31,7 +31,7 @@ public class GoogleTransActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 /*
-                * https://code.google.com/p/google-api-translate-java/
+                * https://code.google.com/p/google-api-translate-java/   https://developers.google.com/api-client-library/java/apis/translate/v2
                 * 이 어플리케이션은 작동하지 않는다.
                 * 사용방법이 아래와 같이 심플한 버전에서 Oauth및 다른 방법으로 완전히 교체됨
                 * */
