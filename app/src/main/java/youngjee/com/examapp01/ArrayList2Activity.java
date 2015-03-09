@@ -2,8 +2,8 @@ package youngjee.com.examapp01;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -19,12 +19,14 @@ public class ArrayList2Activity extends ActionBarActivity implements AdapterView
 
     ArrayAdapter<String> mAdapter;
 
+    EditText inputText ;
+    ArrayList<String> arrlist = new ArrayList<String>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_array_list2);
 
-        ArrayList<String> arrlist = new ArrayList<String>();
         mAdapter = new ArrayAdapter<String>(this,R.layout.listview_exam,arrlist);
 
         ListView list = (ListView) findViewById(R.id.idList);
@@ -34,6 +36,22 @@ public class ArrayList2Activity extends ActionBarActivity implements AdapterView
         Button button = (Button) findViewById(R.id.idBtn);
         button.setOnClickListener(this);
 
+        inputText =  (EditText) findViewById(R.id.idEdit);
+        inputText.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (event.getAction() ==KeyEvent.ACTION_DOWN) {
+                    Log.d("ArrayList2Activity", "KEYCODE:"+keyCode);
+                    if (keyCode == 66) {
+                        arrlist.add(mAdapter.getCount(), inputText.getText().toString());
+                        mAdapter.notifyDataSetChanged();
+                        inputText.setText("");
+                    }
+                }
+                return false;
+            }
+        });
+
     }
 
 
@@ -41,13 +59,12 @@ public class ArrayList2Activity extends ActionBarActivity implements AdapterView
     public void onClick(View v) {
         int listCount = mAdapter.getCount();
 
-        EditText editText = (EditText) findViewById(R.id.idEdit);
-        mAdapter.insert(editText.getText().toString() , listCount );
+        mAdapter.insert(inputText.getText().toString() , listCount );
 
         ListView idList = (ListView) findViewById(R.id.idList);
         idList.smoothScrollToPosition(listCount);
 
-        editText.setText("");
+        inputText.setText("");
 
     }
 
@@ -55,7 +72,6 @@ public class ArrayList2Activity extends ActionBarActivity implements AdapterView
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         TextView selectView = (TextView) view;
 
-        EditText editText = (EditText) findViewById(R.id.idEdit);
-        editText.setText(selectView.getText());
+        inputText.setText(selectView.getText());
     }
 }
