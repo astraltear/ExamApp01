@@ -324,5 +324,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goMp3Player2(View v){
+        Intent intent = new Intent(this, MP3Player2DemoActivity.class);
+        startActivity(intent);
+    }
 
 }

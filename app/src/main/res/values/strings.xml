@@ -65,5 +65,6 @@
     <string name="title_activity_google_trans">GoogleTransActivity</string>
     <string name="title_activity_downloader_demo">DownloaderDemoActivity</string>
     <string name="title_activity_mp3_player_demo">MP3PlayerDemoActivity</string>
+    <string name="title_activity_mp3_player2_demo">MP3Player2DemoActivity</string>
 
 </resources>
