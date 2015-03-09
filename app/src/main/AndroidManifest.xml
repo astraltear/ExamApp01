@@ -275,6 +275,10 @@
             android:name=".GoogleTransActivity"
             android:label="@string/title_activity_google_trans" >
         </activity>
+        <activity
+            android:name=".DownloaderDemoActivity"
+            android:label="@string/title_activity_downloader_demo" >
+        </activity>
     </application>
 
 </manifest>

@@ -315,4 +315,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     }
 
 
+    public void goDownloader(View v){
+        Intent intent = new Intent(this, DownloaderDemoActivity.class);
+        startActivity(intent);
+    }
+
+
+
 }

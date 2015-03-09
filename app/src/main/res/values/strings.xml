@@ -63,5 +63,6 @@
     <string name="title_activity_check_install_app">CheckInstallAppActivity</string>
     <string name="title_activity_url_conn_test">UrlConnTestActivity</string>
     <string name="title_activity_google_trans">GoogleTransActivity</string>
+    <string name="title_activity_downloader_demo">DownloaderDemoActivity</string>
 
 </resources>
