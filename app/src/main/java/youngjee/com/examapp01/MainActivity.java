@@ -344,5 +344,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goDrawerNFrag(View v){
+        Intent intent = new Intent(this, DrawerNFragmentActivity.class);
+        startActivity(intent);
+    }
 
 }

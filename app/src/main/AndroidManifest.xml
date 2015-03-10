@@ -299,6 +299,10 @@
             android:name=".DrawerLayoutActivity"
             android:label="@string/title_activity_drawer_layout" >
         </activity>
+        <activity
+            android:name=".DrawerNFragmentActivity"
+            android:label="@string/title_activity_drawer_nfragment" >
+        </activity>
     </application>
 
 </manifest>

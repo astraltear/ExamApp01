@@ -71,5 +71,6 @@
     <string name="title_activity_drawer_layout">DrawerLayoutActivity</string>
     <string name="open_drawer">Open drawer</string>
     <string name="close_drawer">Close drawer</string>
+    <string name="title_activity_drawer_nfragment">DrawerNFragmentActivity</string>
 
 </resources>
