@@ -339,4 +339,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goDrawerLayout(View v){
+        Intent intent = new Intent(this, DrawerLayoutActivity.class);
+        startActivity(intent);
+    }
+
+
 }

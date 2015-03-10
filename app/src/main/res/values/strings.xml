@@ -68,5 +68,8 @@
     <string name="title_activity_mp3_player2_demo">MP3Player2DemoActivity</string>
     <string name="title_activity_fragment_demo">FragmentDemoActivity</string>
     <string name="title_activity_new_notification">NewNotificationActivity</string>
+    <string name="title_activity_drawer_layout">DrawerLayoutActivity</string>
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
 
 </resources>

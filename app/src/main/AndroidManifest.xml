@@ -295,6 +295,10 @@
             android:name=".NewNotificationActivity"
             android:label="@string/title_activity_new_notification" >
         </activity>
+        <activity
+            android:name=".DrawerLayoutActivity"
+            android:label="@string/title_activity_drawer_layout" >
+        </activity>
     </application>
 
 </manifest>
