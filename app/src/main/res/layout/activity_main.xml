@@ -13,7 +13,6 @@
             android:layout_height="fill_parent"
             android:orientation="vertical">
 
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -534,6 +533,26 @@
             android:id="@+id/btn_mp3playerDemo2"
             android:layout_below="@+id/btn_mp3playerDemo"
             android:onClick="goMp3Player2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fragmentDemo"
+            android:id="@+id/btn_fragDemo"
+            android:layout_below="@+id/btn_mp3playerDemo2"
+            android:onClick="goFragmentDemo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NewNotification"
+            android:id="@+id/btn_newNoti"
+            android:layout_below="@+id/btn_fragDemo"
+            android:onClick="goNewNotification"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 

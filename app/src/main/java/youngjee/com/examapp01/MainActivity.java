@@ -329,4 +329,14 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goFragmentDemo(View v){
+        Intent intent = new Intent(this, FragmentDemoActivity.class);
+        startActivity(intent);
+    }
+
+    public void goNewNotification(View v){
+        Intent intent = new Intent(this, NewNotificationActivity.class);
+        startActivity(intent);
+    }
+
 }
