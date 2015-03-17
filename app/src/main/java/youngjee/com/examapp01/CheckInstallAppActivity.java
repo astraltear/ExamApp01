@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 public class CheckInstallAppActivity extends ActionBarActivity {
 
@@ -16,12 +17,12 @@ public class CheckInstallAppActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check_install_app);
         PackageManager pm = getPackageManager();
+
         try {
             PackageInfo pi = pm.getPackageInfo(CHECK_PACKAGE_NAME.trim(), PackageManager.GET_META_DATA);
             ApplicationInfo appInfo = pi.applicationInfo;
             Log.d("CheckInstallAppActivity", "패키지가 설치되었습니다.");
-
-
+            Toast.makeText(getApplicationContext(), "pi.versionName["+pi.versionName+"]pi.versionCode["+pi.versionCode+"]", Toast.LENGTH_SHORT);
 
             // OR
             pm.getApplicationInfo(CHECK_PACKAGE_NAME.toLowerCase(), PackageManager.GET_META_DATA);
