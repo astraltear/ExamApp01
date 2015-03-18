@@ -13,7 +13,7 @@ public class TapHostActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tap_host);
-        TabHost tabHost = (TabHost)findViewById(R.id.tab_host);
+        TabHost tabHost = (TabHost)findViewById(android.R.id.tabhost);
         tabHost.setup();
 
         // Tab1 Setting
@@ -35,7 +35,7 @@ public class TapHostActivity extends ActionBarActivity {
         tabHost.addTab(tabSpec3);
 
         // show First Tab Content
-        tabHost.setCurrentTab(0);
+        //tabHost.setCurrentTab(0);
     }
 
 }
