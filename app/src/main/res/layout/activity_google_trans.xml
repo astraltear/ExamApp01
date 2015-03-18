@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="youngjee.com.examapp01.GoogleTransActivity">
+
+    <TextView
+        android:id="@+id/translate_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Text to translate :"/>
+    <EditText
+        android:id="@+id/et_trans_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text to translate"
+        android:layout_below="@+id/translate_text"/>
+    <Button
+        android:id="@+id/btn_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Translate to Korean"
+        android:layout_below="@+id/et_trans_text"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/tv_translated"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_trans"/>
+
+
+</RelativeLayout>

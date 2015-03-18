@@ -304,4 +304,49 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goConnNet(View v){
+        Intent intent = new Intent(this, UrlConnTestActivity.class);
+        startActivity(intent);
+    }
+
+    public void goGoogleTrans(View v){
+        Intent intent = new Intent(this, GoogleTransActivity.class);
+        startActivity(intent);
+    }
+
+    public void goDownloader(View v){
+        Intent intent = new Intent(this, DownloaderDemoActivity.class);
+        startActivity(intent);
+    }
+
+    public void goMp3Player(View v){
+        Intent intent = new Intent(this, MP3PlayerDemoActivity.class);
+        startActivity(intent);
+    }
+
+    public void goMp3Player2(View v){
+        Intent intent = new Intent(this, MP3Player2DemoActivity.class);
+        startActivity(intent);
+    }
+
+    public void goFragmentDemo(View v){
+        Intent intent = new Intent(this, FragmentDemoActivity.class);
+        startActivity(intent);
+    }
+
+    public void goNewNotification(View v){
+        Intent intent = new Intent(this, NewNotificationActivity.class);
+        startActivity(intent);
+    }
+
+    public void goDrawerLayout(View v){
+        Intent intent = new Intent(this, DrawerLayoutActivity.class);
+        startActivity(intent);
+    }
+
+    public void goDrawerNFrag(View v){
+        Intent intent = new Intent(this, DrawerNFragmentActivity.class);
+        startActivity(intent);
+    }
+
 }

@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="youngjee.com.examapp01.DownloaderDemoActivity">
+
+    <EditText
+        android:id="@+id/et_input_url"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="http://mirror.bandisoft.co.kr/bandizip/BANDIZIP-SETUP-KR.EXE"
+        android:hint="Enter URL"/>
+    <Button
+        android:id="@+id/btn_downqueue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to download queue"/>
+    <Button
+        android:id="@+id/btn_downcancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel lastest download"/>
+    <Button
+        android:id="@+id/btn_downview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view downlaod"/>
+</LinearLayout>

@@ -61,5 +61,16 @@
     <string name="title_activity_image_send_sms">ImageSendSMSActivity</string>
     <string name="title_activity_device_info_gps">DeviceInfoGPSActivity</string>
     <string name="title_activity_check_install_app">CheckInstallAppActivity</string>
+    <string name="title_activity_url_conn_test">UrlConnTestActivity</string>
+    <string name="title_activity_google_trans">GoogleTransActivity</string>
+    <string name="title_activity_downloader_demo">DownloaderDemoActivity</string>
+    <string name="title_activity_mp3_player_demo">MP3PlayerDemoActivity</string>
+    <string name="title_activity_mp3_player2_demo">MP3Player2DemoActivity</string>
+    <string name="title_activity_fragment_demo">FragmentDemoActivity</string>
+    <string name="title_activity_new_notification">NewNotificationActivity</string>
+    <string name="title_activity_drawer_layout">DrawerLayoutActivity</string>
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+    <string name="title_activity_drawer_nfragment">DrawerNFragmentActivity</string>
 
 </resources>

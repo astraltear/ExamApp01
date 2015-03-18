@@ -30,6 +30,13 @@ public class SharedPreferencesActivity extends ActionBarActivity  implements Vie
 
     @Override
     public void onClick(View v) {
+        /*
+        - getPreferences(int mode) : 하나의 액티비티에서만 사용하는 SharedPreferences를 생성합니다.
+         생성되는 SharedPreferences 파일은 해당 액티비티의 이름으로 생성됩니다.
+         하나의 액티비티에서 사용할 목적으로 생성하였지만, 생성한 SharedPreferences의 이름을 getSharedPreferences() 메서드에 대입하면 다른 액티비티에서도 저장된 데이터에 접근할 수 있습니다.
+
+        - getSharedPreferences(String name, int mode) : 특정 이름을 가지는 SharedPreferences를 생성합니다. 주로 애플리케이션 전체에서 설정값 등을 저장하거나 불러와야 할 때 사용합니다.
+        * */
         if ( v.getId() ==R.id.btn_save ){
             SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPref.edit();
