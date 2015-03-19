@@ -72,7 +72,8 @@
         </activity>
         <activity
             android:name=".TapHostActivity"
-            android:label="@string/title_activity_tap_host" >
+            android:label="@string/title_activity_tap_host"
+            android:theme="@android:style/Theme.NoTitleBar">
         </activity>
         <activity
             android:name=".MakeDialogActivity"
