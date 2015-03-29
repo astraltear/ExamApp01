@@ -308,6 +308,10 @@
             android:name=".EffectSoundActivity"
             android:label="@string/title_activity_effect_sound" >
         </activity>
+        <activity
+            android:name=".StreamingPlayerActivity"
+            android:label="@string/title_activity_streaming_player" >
+        </activity>
     </application>
 
 </manifest>

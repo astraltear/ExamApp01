@@ -353,4 +353,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Intent intent = new Intent(this, EffectSoundActivity.class);
         startActivity(intent);
     }
+
+    public void goStreamingPlayer(View v){
+        Intent intent = new Intent(this, StreamingPlayerActivity.class);
+        startActivity(intent);
+    }
 }

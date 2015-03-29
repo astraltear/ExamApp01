@@ -31,7 +31,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_thread_stop_message"
         android:text="핸들러를 띄우는 여러가지 방법"
-        android:onClick="useHandleClick"
-        android:background="#00000000"/>
+        android:onClick="useHandleClick"/>
+
+    <Button
+        android:id="@+id/btn_countDown"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_various"
+        android:text="10 카운트다운"
+        android:onClick="useHandleClick"/>
 
 </RelativeLayout>

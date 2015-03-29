@@ -586,6 +586,16 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="스트리밍 플레이어"
+            android:id="@+id/btn_streamingPlayer"
+            android:layout_below="@+id/btn_effectsound"
+            android:onClick="goStreamingPlayer"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
         </LinearLayout>
      </ScrollView>
 </RelativeLayout>

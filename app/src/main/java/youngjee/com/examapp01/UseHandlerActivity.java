@@ -5,6 +5,7 @@ import android.os.Message;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
@@ -22,6 +23,28 @@ public class UseHandlerActivity extends ActionBarActivity {
     private CountThread mCountThread = null;
 
     private Handler variousHandler;
+    private Handler countdownHandler = new Handler();
+
+    private class SendMessageHandler extends Handler {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch ( msg.what){
+                case SEND_THREAD_INFORMATION:
+                    tv_Count.setText("현재시간="+msg.arg1+"\n index="+msg.arg2+"인 \n"+msg.obj);
+                    break;
+
+                case SEND_THREAD_STOP_MESSAGE:
+                    mCountThread.stopThread();
+                    tv_Count.setText("Count Thread가 중지되었습니다.");
+                    break;
+
+                default:
+                    break;
+
+            }
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +69,9 @@ public class UseHandlerActivity extends ActionBarActivity {
                 break;
 
             case R.id.btn_various:
+                // 주석을 하나씩 풀면서 테스트를 한다.
                 variousHandler.post(mRunnable);
-                variousHandler.postAtFrontOfQueue(mRunnable);
+               /* variousHandler.postAtFrontOfQueue(mRunnable);
                 variousHandler.postDelayed(mRunnable, 4000);
 
                 new Handler().post(mRunnable);
@@ -59,8 +83,38 @@ public class UseHandlerActivity extends ActionBarActivity {
                     public void run() {
                          tv_Count.setText("런어블 심플 2222");
                     }
-                });
+                });*/
                 break;
+
+            case R.id.btn_countDown:
+                final Button btn_countDown = (Button) findViewById(R.id.btn_countDown);
+
+                new Thread(new Runnable() {
+                    int i =10;
+                    @Override
+                    public void run() {
+                        while ( i >= 0 ){
+                            countdownHandler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    if(i==0){
+                                        btn_countDown.setText("10 카운트다운");
+                                    }else {
+                                        btn_countDown.setText(""+i);
+                                    }
+                                }
+                            });
+
+                            try {
+                                Thread.sleep(1000);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                            i--;
+                        }
+                    }
+                }).start();
+
 
             default:
                 break;
@@ -74,34 +128,12 @@ public class UseHandlerActivity extends ActionBarActivity {
         }
     };
 
-    private class SendMessageHandler extends Handler {
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            switch ( msg.what){
-                case SEND_THREAD_INFORMATION:
-                    tv_Count.setText("현재시간="+msg.arg1+"\n index="+msg.arg2+"인 \n"+msg.obj);
-                    break;
-
-                case SEND_THREAD_STOP_MESSAGE:
-                    mCountThread.stopThread();
-                    tv_Count.setText("Count Thread가 중지되었습니다.");
-                    break;
-
-                default:
-                    break;
-
-            }
-        }
-    }
-
     private class CountThread extends Thread implements Runnable {
         private boolean isPlay = false;
 
         private CountThread() {
             this.isPlay = true;
         }
-
         public void stopThread() {
             isPlay = !isPlay;
         }
