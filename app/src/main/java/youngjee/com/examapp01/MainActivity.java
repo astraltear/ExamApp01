@@ -349,4 +349,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goEffectSound(View v){
+        Intent intent = new Intent(this, EffectSoundActivity.class);
+        startActivity(intent);
+    }
 }

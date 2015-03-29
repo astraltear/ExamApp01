@@ -73,7 +73,7 @@
         <activity
             android:name=".TapHostActivity"
             android:label="@string/title_activity_tap_host"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
             android:name=".MakeDialogActivity"
@@ -303,6 +303,10 @@
         <activity
             android:name=".DrawerNFragmentActivity"
             android:label="@string/title_activity_drawer_nfragment" >
+        </activity>
+        <activity
+            android:name=".EffectSoundActivity"
+            android:label="@string/title_activity_effect_sound" >
         </activity>
     </application>
 

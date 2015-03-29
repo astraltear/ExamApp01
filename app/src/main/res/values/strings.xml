@@ -72,5 +72,6 @@
     <string name="open_drawer">Open drawer</string>
     <string name="close_drawer">Close drawer</string>
     <string name="title_activity_drawer_nfragment">DrawerNFragmentActivity</string>
+    <string name="title_activity_effect_sound">EffectSoundActivity</string>
 
 </resources>

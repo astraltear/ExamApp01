@@ -575,6 +575,17 @@
             android:onClick="goDrawerNFrag"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="파일다운로드 재생"
+            android:id="@+id/btn_effectsound"
+            android:layout_below="@+id/btn_DraweFragr"
+            android:onClick="goEffectSound"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
         </LinearLayout>
      </ScrollView>
 </RelativeLayout>
