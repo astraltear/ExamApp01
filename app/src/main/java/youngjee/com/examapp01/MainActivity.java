@@ -358,4 +358,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Intent intent = new Intent(this, StreamingPlayerActivity.class);
         startActivity(intent);
     }
+
+    public void goGetUuid(View v){
+        Intent intent = new Intent(this, GetUUIDActivity.class);
+        startActivity(intent);
+    }
 }
