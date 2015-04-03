@@ -487,6 +487,14 @@
             android:id="@+id/btn_getuuid"
             android:layout_below="@+id/btn_streamingPlayer"
             android:onClick="goGetUuid" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연락처 초성검색"
+            android:id="@+id/btn_telNoSearch"
+            android:layout_below="@+id/btn_getuuid"
+            android:onClick="goTelNoSearch" />
         </LinearLayout>
      </ScrollView>
 </RelativeLayout>

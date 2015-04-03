@@ -25,12 +25,12 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     @Override
     public void onBackPressed() {
-        Log.d("MainActivity", m_close_flag+":init");
+
         if (m_close_flag == false) {
             Toast.makeText(this, "취소키를 빨리 한번 더 누르시면 종료됩니다.", Toast.LENGTH_LONG).show();
             m_close_flag = true;
-            Log.d("MainActivity", m_close_flag+":in if");
            m_close_handler.sendEmptyMessageDelayed(0, 3000);
+
         } else {
             super.onBackPressed();
         }
@@ -361,6 +361,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     public void goGetUuid(View v){
         Intent intent = new Intent(this, GetUUIDActivity.class);
+        startActivity(intent);
+    }
+
+    public void goTelNoSearch(View v){
+        Intent intent = new Intent(this, TelNoSearchActivity.class);
         startActivity(intent);
     }
 }
