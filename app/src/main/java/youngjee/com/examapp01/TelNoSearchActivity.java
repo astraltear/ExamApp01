@@ -73,8 +73,6 @@ public class TelNoSearchActivity extends ActionBarActivity {
             addContact(contactList, cursor.getString(1), cursor.getString(2));
         }
 
-        Log.d(getClass().getSimpleName(), "contactList.size()[" + contactList.size() + "]");
-
         ContactListAdapter<Contact> adapter = new ContactListAdapter<Contact>(this, R.layout.contact_list_row, contactList);
         mListView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
@@ -102,7 +100,6 @@ public class TelNoSearchActivity extends ActionBarActivity {
         }
 
         if(isAdd){
-            Log.d(getClass().getSimpleName(), "name[" + name + "]number[" + number + "]");
             contactList.add(new Contact(name,number));
         }
     }
