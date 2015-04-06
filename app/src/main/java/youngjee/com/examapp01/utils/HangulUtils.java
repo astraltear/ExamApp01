@@ -1,5 +1,7 @@
 package youngjee.com.examapp01.utils;
 
+import android.util.Log;
+
 public class HangulUtils {
 
     private static String toHexString(int decimal) {
@@ -90,8 +92,7 @@ public class HangulUtils {
         return choList;
     }
 
-    public static String getHangulInitialSound(String value,
-                                               String searchKeyword) {
+    public static String getHangulInitialSound(String value,String searchKeyword) {
         return getHangulInitialSound(value, getIsChoSungList(searchKeyword));
     }
 
@@ -99,28 +100,30 @@ public class HangulUtils {
 
         StringBuffer result = new StringBuffer();
 
-        int[] unicodeList = convertStringToUnicode(value);
-        for (int idx = 0; idx < unicodeList.length; idx++) {
-            int unicode = unicodeList[idx];
+        try {
+            int[] unicodeList = convertStringToUnicode(value);
+            for (int idx = 0; idx < unicodeList.length; idx++) {
+                int unicode = unicodeList[idx];
 
-            if (isChoList != null && idx <= (isChoList.length - 1)) {
-                if (isChoList[idx]) {
-                    if (HANGUL_BEGIN_UNICODE <= unicode
-                            && unicode <= HANGUL_END_UNICODE) {
-                        int tmp = (unicode - HANGUL_BEGIN_UNICODE);
-                        int index = tmp / HANGUL_BASE_UNIT;
-                        result.append(INITIAL_SOUND[index]);
+                if (isChoList != null && idx <= (isChoList.length - 1)) {
+                    if (isChoList[idx]) {
+                        if (HANGUL_BEGIN_UNICODE <= unicode && unicode <= HANGUL_END_UNICODE) {
+                            int tmp = (unicode - HANGUL_BEGIN_UNICODE);
+                            int index = tmp / HANGUL_BASE_UNIT;
+                            result.append(INITIAL_SOUND[index]);
+                        } else {
+                            result.append(convertUnicodeToChar(unicode));
+                        }
                     } else {
                         result.append(convertUnicodeToChar(unicode));
                     }
                 } else {
                     result.append(convertUnicodeToChar(unicode));
                 }
-            } else {
-                result.append(convertUnicodeToChar(unicode));
             }
+        } catch (Exception e){
+            result.setLength(0);
         }
-
         return result.toString();
     }
 

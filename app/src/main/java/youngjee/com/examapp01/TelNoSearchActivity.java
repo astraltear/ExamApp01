@@ -63,7 +63,7 @@ public class TelNoSearchActivity extends ActionBarActivity {
 
     }
 
-    private void displayList() throws Exception{
+    private void displayList() {
         List<Contact> contactList = new ArrayList<Contact>();
 
         String[] projection = new String[]{Contacts.People._ID, Contacts.People.NAME, Contacts.People.NUMBER};
@@ -82,7 +82,7 @@ public class TelNoSearchActivity extends ActionBarActivity {
     }
 
 
-    private void addContact(List<Contact> contactList, String name, String number) throws Exception{
+    private void addContact(List<Contact> contactList, String name, String number) {
         if (contactList == null) {
             throw new NullPointerException("contactList 가 널");
         }
