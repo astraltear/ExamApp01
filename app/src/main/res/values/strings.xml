@@ -76,5 +76,6 @@
     <string name="title_activity_streaming_player">StreamingPlayerActivity</string>
     <string name="title_activity_get_uuid">GetUUIDActivity</string>
     <string name="title_activity_tel_no_search">TelNoSearchActivity</string>
+    <string name="title_activity_music_player">MusicPlayerActivity</string>
 
 </resources>
