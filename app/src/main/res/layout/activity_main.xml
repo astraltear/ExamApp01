@@ -382,6 +382,12 @@
                    android:text="@string/str_searchsong"
                    android:id="@+id/btn_musicPlayer"
                    android:onClick="goMusicPlayer" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="웹뷰Finished"
+                   android:id="@+id/btn_webviewFinished"
+                   android:onClick="goWebViewFinished" />
            </GridLayout>
         </LinearLayout>
      </ScrollView>

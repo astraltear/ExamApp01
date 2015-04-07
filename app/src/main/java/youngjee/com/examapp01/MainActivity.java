@@ -372,5 +372,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goWebViewFinished(View v){
+        Intent intent = new Intent(this, WebViewFinishedActivity.class);
+        startActivity(intent);
+    }
 
 }

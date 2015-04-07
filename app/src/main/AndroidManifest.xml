@@ -326,6 +326,10 @@
             android:name=".MusicSearchActivity"
             android:label="@string/title_activity_music_player" >
         </activity>
+        <activity
+            android:name=".WebViewFinishedActivity"
+            android:label="@string/title_activity_web_view_finished" >
+        </activity>
     </application>
 
 </manifest>
