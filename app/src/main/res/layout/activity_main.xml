@@ -12,499 +12,377 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ArrayAdapter"
-            android:id="@+id/btn_ArrAdapter" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="UserAdapter"
-            android:id="@+id/btn_UserAdapter"
-            android:layout_below="@+id/btn_ArrAdapter" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ArrayAdapter Data Insert"
-            android:id="@+id/btn_ArrAdapter2"
-            android:layout_below="@+id/btn_UserAdapter" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Asset ImageRead"
-            android:id="@+id/btnAssetImageRead"
-            android:layout_below="@+id/btn_ArrAdapter2" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MemoryCheck"
-            android:id="@+id/btnMemoryCheck"
-            android:layout_below="@+id/btnAssetImageRead" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ActionBar"
-            android:id="@+id/btnActionBar"
-            android:layout_below="@+id/btnMemoryCheck" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Intent Data Send"
-            android:id="@+id/btnIntentDataSend"
-            android:layout_below="@+id/btnActionBar" />
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Take Picture"
-            android:id="@+id/btnTakePicture"
-            android:layout_below="@+id/btnIntentDataSend"
-            android:onClick="goTakePicture"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TouchEvent"
-            android:id="@+id/btnTouchEvent"
-            android:layout_below="@+id/btnTakePicture"
-            />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TapHost"
-            android:id="@+id/btnTapHost"
-            android:layout_below="@+id/btnTouchEvent"
-            android:onClick="goTapHost"
-            />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MakeDialog"
-            android:id="@+id/btnMakeDialog"
-            android:layout_below="@+id/btnTapHost"
-            android:onClick="goMakeDialog"
-            />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Progress"
-            android:id="@+id/btn_progress"
-            android:layout_below="@+id/btnMakeDialog"
-            android:onClick="goMakeProgress" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="WakeLock AND Vibrator"
-            android:id="@+id/btn_wakeLock"
-            android:layout_below="@+id/btn_progress"
-            android:onClick="goWakeLock" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DynamicScroll"
-            android:id="@+id/btn_dynaScroll"
-            android:layout_below="@+id/btn_progress"
-            android:onClick="goDynaScroll" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="UI Layout"
-            android:id="@+id/btn_UiLayout"
-            android:layout_below="@+id/btn_dynaScroll"
-            android:onClick="goUiLayout" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SharedPreferences"
-            android:id="@+id/btn_Sharedpre"
-            android:layout_below="@+id/btn_UiLayout"
-            android:onClick="goSharedpr" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="File Read Write"
-            android:id="@+id/btn_FileWrite"
-            android:layout_below="@+id/btn_Sharedpre"
-            android:onClick="goFileWrite" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SQL Handle"
-            android:id="@+id/btn_sqlHandle"
-            android:layout_below="@+id/btn_FileWrite"
-            android:onClick="goSqlHandle" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Implicit Intent"
-            android:id="@+id/btn_ImplicitIntent"
-            android:layout_below="@+id/btn_sqlHandle"
-            android:onClick="goImplicitIntent" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DialogCallBack"
-            android:id="@+id/btn_DialogCallBack"
-            android:layout_below="@+id/btn_ImplicitIntent"
-            android:onClick="goDialogCallBack" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Notification"
-            android:id="@+id/btn_Notification"
-            android:layout_below="@+id/btn_DialogCallBack"
-            android:onClick="goNotification" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="AutoCompleteText"
-            android:id="@+id/btn_AutoCompleteText"
-            android:layout_below="@+id/btn_Notification"
-            android:onClick="goAutoCompleteText" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ViewPager"
-            android:id="@+id/btn_ViewPager"
-            android:layout_below="@+id/btn_AutoCompleteText"
-            android:onClick="goViewPager" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextWatcher"
-            android:id="@+id/btn_TextWatcher"
-            android:layout_below="@+id/btn_ViewPager"
-            android:onClick="goTextWatcher" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ArraySpinner"
-            android:id="@+id/btn_ArraySpinner"
-            android:layout_below="@+id/btn_TextWatcher"
-            android:onClick="goArraySpinner" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CustomListView"
-            android:id="@+id/btn_CustomListView"
-            android:layout_below="@+id/btn_ArraySpinner"
-            android:onClick="goCustomListView" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ArrayAdapter2"
-            android:id="@+id/btn_ArrayAdapter2"
-            android:layout_below="@+id/btn_CustomListView"
-            android:onClick="goArrayAdapter2" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ExpandableListView"
-            android:id="@+id/btn_ExpandableListView"
-            android:layout_below="@+id/btn_ArrayAdapter2"
-            android:onClick="goExpandableListView"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ListSpinnerGrid_OnItemCLick"
-            android:id="@+id/btn_ListView_OnItemCLick"
-            android:layout_below="@+id/btn_ExpandableListView"
-            android:onClick="goListView_OnItemCLick"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ListView_HeaderFooter"
-            android:id="@+id/btn_ListView_HeaderFooter"
-            android:layout_below="@+id/btn_ListView_OnItemCLick"
-            android:onClick="goListView_HeaderFooter"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DateTimerPicker"
-            android:id="@+id/btn_DateTimerPicker"
-            android:layout_below="@+id/btn_ListView_HeaderFooter"
-            android:onClick="goDateTimerPicker" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ViewFlipper"
-            android:id="@+id/btn_makeFlipper"
-            android:layout_below="@+id/btn_DateTimerPicker"
-            android:onClick="goMakeFlipper" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ThreadDemo"
-            android:id="@+id/btn_makeThread"
-            android:layout_below="@+id/btn_makeFlipper"
-            android:onClick="goMakeThread" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="AsyncTaskDemo"
-            android:id="@+id/btn_makeAsyncTask"
-            android:layout_below="@+id/btn_makeThread"
-            android:onClick="goAsyncTask" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="PopupWindow"
-            android:id="@+id/btn_popupWindow"
-            android:layout_below="@+id/btn_makeAsyncTask"
-            android:onClick="goPopupWindow" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Intent Example"
-            android:id="@+id/btn_intentExam"
-            android:layout_below="@+id/btn_popupWindow"
-            android:onClick="goIntentExam" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rotate Activity"
-            android:id="@+id/btn_rotate"
-            android:layout_below="@+id/btn_intentExam"
-            android:onClick="goRotateActivity" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Test Configure"
-            android:id="@+id/btn_testConfiure"
-            android:layout_below="@+id/btn_rotate"
-            android:onClick="goTestConfigure" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="make Service"
-            android:id="@+id/btn_makeService"
-            android:layout_below="@+id/btn_testConfiure"
-            android:onClick="goMakeService" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BroadCastReceiver"
-            android:id="@+id/btn_makeBroadCastReceiver"
-            android:layout_below="@+id/btn_makeService"
-            android:onClick="goBroadCastReceiver" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="AlarmManager"
-            android:id="@+id/btn_makeAlarmManager"
-            android:layout_below="@+id/btn_makeBroadCastReceiver"
-            android:onClick="goAlarmManager" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ThreadDemo2"
-            android:id="@+id/btn_makethreadDemo2"
-            android:layout_below="@+id/btn_makeAlarmManager"
-            android:onClick="goThreadDemo2" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Use Handler"
-            android:id="@+id/btn_useHandler"
-            android:layout_below="@+id/btn_makethreadDemo2"
-            android:onClick="goUseHandler" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="File Manage"
-            android:id="@+id/btn_fileMng"
-            android:layout_below="@+id/btn_useHandler"
-            android:onClick="goFileMng" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Click LongClick"
-            android:id="@+id/btn_clickLongClick"
-            android:layout_below="@+id/btn_fileMng"
-            android:onClick="goClickLongClick" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ImageCropSendSMS"
-            android:id="@+id/btn_imageSendSMS"
-            android:layout_below="@+id/btn_clickLongClick"
-            android:onClick="goImageSendSMS" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Device Info GPS"
-            android:id="@+id/btn_deviceInfoGPS"
-            android:layout_below="@+id/btn_imageSendSMS"
-            android:onClick="goDeviceInfoGPS" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="앱 설치여부 조사"
-            android:id="@+id/btn_checkInstallApp"
-            android:layout_below="@+id/btn_deviceInfoGPS"
-            android:onClick="goCheckInstallApp"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="네트워크시 주의점"
-            android:id="@+id/btn_connNet"
-            android:layout_below="@+id/btn_checkInstallApp"
-            android:onClick="goConnNet" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="번역기 만들기"
-            android:id="@+id/btn_trans"
-            android:layout_below="@+id/btn_connNet"
-            android:onClick="goGoogleTrans" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="다운로더 만들기"
-            android:id="@+id/btn_downloader"
-            android:layout_below="@+id/btn_trans"
-            android:onClick="goDownloader" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MP3 플레이어"
-            android:id="@+id/btn_mp3playerDemo"
-            android:layout_below="@+id/btn_downloader"
-            android:onClick="goMp3Player" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MP3 플레이어2"
-            android:id="@+id/btn_mp3playerDemo2"
-            android:layout_below="@+id/btn_mp3playerDemo"
-            android:onClick="goMp3Player2" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="fragmentDemo"
-            android:id="@+id/btn_fragDemo"
-            android:layout_below="@+id/btn_mp3playerDemo2"
-            android:onClick="goFragmentDemo" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NewNotification"
-            android:id="@+id/btn_newNoti"
-            android:layout_below="@+id/btn_fragDemo"
-            android:onClick="goNewNotification" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="드로워레이아웃"
-            android:id="@+id/btn_Drawer"
-            android:layout_below="@+id/btn_newNoti"
-            android:onClick="goDrawerLayout" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="드로워와프래그먼트"
-            android:id="@+id/btn_DraweFragr"
-            android:layout_below="@+id/btn_Drawer"
-            android:onClick="goDrawerNFrag" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="파일다운로드 재생"
-            android:id="@+id/btn_effectsound"
-            android:layout_below="@+id/btn_DraweFragr"
-            android:onClick="goEffectSound" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="스트리밍 플레이어"
-            android:id="@+id/btn_streamingPlayer"
-            android:layout_below="@+id/btn_effectsound"
-            android:onClick="goStreamingPlayer" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="get UUID"
-            android:id="@+id/btn_getuuid"
-            android:layout_below="@+id/btn_streamingPlayer"
-            android:onClick="goGetUuid" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="연락처 초성검색"
-            android:id="@+id/btn_telNoSearch"
-            android:layout_below="@+id/btn_getuuid"
-            android:onClick="goTelNoSearch" />
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="노래검색기"
-            android:id="@+id/btn_musicPlayer"
-            android:layout_below="@+id/btn_telNoSearch"
-            android:onClick="goMusicPlayer" />
-
+           <GridLayout
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:columnCount="2"
+               android:rowCount="10">
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_arrayadapter"
+                   android:id="@+id/btn_ArrAdapter" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_userdefineadapter"
+                   android:id="@+id/btn_UserAdapter" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_arrayadapterinsert"
+                   android:id="@+id/btn_ArrAdapter2"
+                    />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_assetimageread"
+                   android:id="@+id/btnAssetImageRead" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_memorycheck"
+                   android:id="@+id/btnMemoryCheck"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_actionbar"
+                   android:id="@+id/btnActionBar"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_intentdatasend"
+                   android:id="@+id/btnIntentDataSend" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_tackpicture"
+                   android:id="@+id/btnTakePicture"
+                   android:onClick="goTakePicture"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_touchevent"
+                   android:id="@+id/btnTouchEvent"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_maketab"
+                   android:id="@+id/btnTapHost"
+                   android:onClick="goTapHost"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_makedialog"
+                   android:id="@+id/btnMakeDialog"
+                   android:onClick="goMakeDialog"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_progress"
+                   android:id="@+id/btn_progress"
+                   android:onClick="goMakeProgress" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_wakeupvibrator"
+                   android:id="@+id/btn_wakeLock"
+                   android:onClick="goWakeLock" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_dynamicscroll"
+                   android:id="@+id/btn_dynaScroll"
+                   android:onClick="goDynaScroll" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_uilayout"
+                   android:id="@+id/btn_UiLayout"
+                   android:onClick="goUiLayout" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_sharedpreferences"
+                   android:id="@+id/btn_Sharedpre"
+                   android:onClick="goSharedpr" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_filereadwrite"
+                   android:id="@+id/btn_FileWrite"
+                   android:onClick="goFileWrite" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_sqlhandle"
+                   android:id="@+id/btn_sqlHandle"
+                   android:onClick="goSqlHandle" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_implicitintent"
+                   android:id="@+id/btn_ImplicitIntent"
+                   android:onClick="goImplicitIntent" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_dialogcallback"
+                   android:id="@+id/btn_DialogCallBack"
+                   android:onClick="goDialogCallBack" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_notification"
+                   android:id="@+id/btn_Notification"
+                   android:onClick="goNotification" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_autocompletetext"
+                   android:id="@+id/btn_AutoCompleteText"
+                   android:onClick="goAutoCompleteText" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_viewpager"
+                   android:id="@+id/btn_ViewPager"
+                   android:onClick="goViewPager" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_textwatcher"
+                   android:id="@+id/btn_TextWatcher"
+                   android:onClick="goTextWatcher" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_arrayspinner"
+                   android:id="@+id/btn_ArraySpinner"
+                   android:onClick="goArraySpinner" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_customlistview"
+                   android:id="@+id/btn_CustomListView"
+                   android:onClick="goCustomListView" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_arrayadapter2"
+                   android:id="@+id/btn_ArrayAdapter2"
+                   android:onClick="goArrayAdapter2" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_expandablelistview"
+                   android:id="@+id/btn_ExpandableListView"
+                   android:onClick="goExpandableListView"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_listspinnergrid_onItemclick"
+                   android:id="@+id/btn_ListView_OnItemCLick"
+                   android:onClick="goListView_OnItemCLick"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_listview_headerfooter"
+                   android:id="@+id/btn_ListView_HeaderFooter"
+                   android:onClick="goListView_HeaderFooter"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_datetimerpicker"
+                   android:id="@+id/btn_DateTimerPicker"
+                   android:onClick="goDateTimerPicker" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_viewflipper"
+                   android:id="@+id/btn_makeFlipper"
+                   android:onClick="goMakeFlipper" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_threaddemo"
+                   android:id="@+id/btn_makeThread"
+                   android:onClick="goMakeThread" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_asynctaskdemo"
+                   android:id="@+id/btn_makeAsyncTask"
+                   android:onClick="goAsyncTask" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_popupwindow"
+                   android:id="@+id/btn_popupWindow"
+                   android:onClick="goPopupWindow" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_intentexample"
+                   android:id="@+id/btn_intentExam"
+                   android:onClick="goIntentExam" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_rotateactivity"
+                   android:id="@+id/btn_rotate"
+                   android:onClick="goRotateActivity" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_testconfigure"
+                   android:id="@+id/btn_testConfiure"
+                   android:onClick="goTestConfigure" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_makeservice"
+                   android:id="@+id/btn_makeService"
+                   android:onClick="goMakeService" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_broadcastreceiver"
+                   android:id="@+id/btn_makeBroadCastReceiver"
+                   android:onClick="goBroadCastReceiver" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_alarmmanager"
+                   android:id="@+id/btn_makeAlarmManager"
+                   android:onClick="goAlarmManager" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_threaddemo2"
+                   android:id="@+id/btn_makethreadDemo2"
+                   android:onClick="goThreadDemo2" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_usehandle"
+                   android:id="@+id/btn_useHandler"
+                   android:onClick="goUseHandler" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_filemanage"
+                   android:id="@+id/btn_fileMng"
+                   android:onClick="goFileMng" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_clicklongclick"
+                   android:id="@+id/btn_clickLongClick"
+                   android:onClick="goClickLongClick" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_imagecropsendsms"
+                   android:id="@+id/btn_imageSendSMS"
+                   android:onClick="goImageSendSMS" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_deviceinfogps"
+                   android:id="@+id/btn_deviceInfoGPS"
+                   android:onClick="goDeviceInfoGPS" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_appinstall"
+                   android:id="@+id/btn_checkInstallApp"
+                   android:onClick="goCheckInstallApp"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_networkwarning"
+                   android:id="@+id/btn_connNet"
+                   android:onClick="goConnNet" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_translator"
+                   android:id="@+id/btn_trans"
+                   android:onClick="goGoogleTrans" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_downloader"
+                   android:id="@+id/btn_downloader"
+                   android:onClick="goDownloader" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_mp3player"
+                   android:id="@+id/btn_mp3playerDemo"
+                   android:onClick="goMp3Player" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_mp3player2"
+                   android:id="@+id/btn_mp3playerDemo2"
+                   android:onClick="goMp3Player2" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_fragmentdemo"
+                   android:id="@+id/btn_fragDemo"
+                   android:onClick="goFragmentDemo" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_newnotification"
+                   android:id="@+id/btn_newNoti"
+                   android:onClick="goNewNotification" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_drawlayout"
+                   android:id="@+id/btn_Drawer"
+                   android:onClick="goDrawerLayout" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_drawerfragment"
+                   android:id="@+id/btn_DraweFragr"
+                   android:onClick="goDrawerNFrag" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_filedownloadplay"
+                   android:id="@+id/btn_effectsound"
+                   android:onClick="goEffectSound" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_stramingplayer"
+                   android:id="@+id/btn_streamingPlayer"
+                   android:onClick="goStreamingPlayer" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_getuuid"
+                   android:id="@+id/btn_getuuid"
+                   android:onClick="goGetUuid" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_searchtelno"
+                   android:id="@+id/btn_telNoSearch"
+                   android:onClick="goTelNoSearch" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/str_searchsong"
+                   android:id="@+id/btn_musicPlayer"
+                   android:onClick="goMusicPlayer" />
+           </GridLayout>
         </LinearLayout>
      </ScrollView>
 </RelativeLayout>
