@@ -105,7 +105,7 @@
     <string name="str_customlistview">CustomListView</string>
     <string name="str_arrayadapter2">ArrayAdapter2</string>
     <string name="str_expandablelistview">ExpandableListView</string>
-    <string name="str_listspinnergrid_onItemclick">SpinnerGrid</string>
+    <string name="str_spinnergrid_onItemclick">SpinnerGrid</string>
     <string name="str_listview_headerfooter">ListView_HeaderFooter</string>
     <string name="str_datetimerpicker">DateTimerPicker</string>
     <string name="str_viewflipper">ViewFlipper</string>
