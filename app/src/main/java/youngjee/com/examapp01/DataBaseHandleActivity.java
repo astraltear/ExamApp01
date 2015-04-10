@@ -6,9 +6,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.sql.SQLException;
+
 public class DataBaseHandleActivity extends ActionBarActivity implements View.OnClickListener {
 
     EditText edtInsName, edtId, edtName, edtDelid;
+    DataBaseDBHandle dbHandle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,17 @@ public class DataBaseHandleActivity extends ActionBarActivity implements View.On
 
     @Override
     public void onClick(View v) {
+
+        try {
+            dbHandle = DataBaseDBHandle.open(this);
+
+            if(v.getId() == R.id.btnIns){
+
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
     }
 }
