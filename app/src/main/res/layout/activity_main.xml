@@ -388,6 +388,12 @@
                    android:text="웹뷰Finished"
                    android:id="@+id/btn_webviewFinished"
                    android:onClick="goWebViewFinished" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="DB처리"
+                   android:id="@+id/btn_dbHandle"
+                   android:onClick="goDBHandle" />
            </GridLayout>
         </LinearLayout>
      </ScrollView>

@@ -330,6 +330,10 @@
             android:name=".WebViewFinishedActivity"
             android:label="@string/title_activity_web_view_finished" >
         </activity>
+        <activity
+            android:name=".DataBaseHandleActivity"
+            android:label="@string/title_activity_data_base_handle" >
+        </activity>
     </application>
 
 </manifest>

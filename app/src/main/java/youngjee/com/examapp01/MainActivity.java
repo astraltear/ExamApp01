@@ -377,4 +377,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goDBHandle(View v) {
+        Intent intent = new Intent(this, DataBaseHandleActivity.class);
+        startActivity(intent);
+    }
+
 }

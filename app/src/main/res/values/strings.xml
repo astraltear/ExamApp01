@@ -140,5 +140,6 @@
     <string name="str_searchtelno">연락처 초성검색</string>
     <string name="str_searchsong">노래검색기</string>
     <string name="title_activity_web_view_finished">WebViewFinishedActivity</string>
+    <string name="title_activity_data_base_handle">DataBaseHandleActivity</string>
 
 </resources>
