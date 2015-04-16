@@ -334,8 +334,11 @@
             android:name=".DataBaseHandleActivity"
             android:label="@string/title_activity_data_base_handle" >
         </activity>
+        <activity android:name=".ResultList" >
+        </activity>
         <activity
-            android:name=".ResultList">
+            android:name=".DownLoadManagerActivity"
+            android:label="@string/title_activity_down_load_manager" >
         </activity>
     </application>
 

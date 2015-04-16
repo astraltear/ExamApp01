@@ -141,5 +141,6 @@
     <string name="str_searchsong">노래검색기</string>
     <string name="title_activity_web_view_finished">WebViewFinishedActivity</string>
     <string name="title_activity_data_base_handle">DataBaseHandleActivity</string>
+    <string name="title_activity_down_load_manager">DownLoadManagerActivity</string>
 
 </resources>

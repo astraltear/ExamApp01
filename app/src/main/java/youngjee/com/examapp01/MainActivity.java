@@ -382,4 +382,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goDownloadMng(View v) {
+        Intent intent = new Intent(this, DownLoadManagerActivity.class);
+        startActivity(intent);
+    }
 }

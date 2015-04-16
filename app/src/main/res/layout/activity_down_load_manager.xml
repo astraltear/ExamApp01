@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="http://file.ssenhosting.com/data1/vamp666/eej135ss.mp3"
+        android:id="@+id/downloadUrl"
+        android:inputType="textUri"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addQueueBtn"
+        android:text="add a download queue"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelDownloadBtn"
+        android:text="cancel lastest downlaod"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewDownloadsBtn"
+        android:text="view downloads"/>
+
+</LinearLayout>
