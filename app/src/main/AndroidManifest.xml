@@ -334,6 +334,9 @@
             android:name=".DataBaseHandleActivity"
             android:label="@string/title_activity_data_base_handle" >
         </activity>
+        <activity
+            android:name=".ResultList">
+        </activity>
     </application>
 
 </manifest>
