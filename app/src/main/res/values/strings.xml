@@ -143,5 +143,7 @@
     <string name="title_activity_data_base_handle">DataBaseHandleActivity</string>
     <string name="title_activity_down_load_manager">DownLoadManagerActivity</string>
     <string name="title_activity_alarm_manager2">AlarmManager2Activity</string>
+    <string name="title_activity_password_manager">PasswordManagerActivity</string>
+    <string name="title_activity_password">Password</string>
 
 </resources>

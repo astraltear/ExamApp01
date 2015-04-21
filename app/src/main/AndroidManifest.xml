@@ -350,6 +350,15 @@
             android:enabled="true"
             android:exported="true"
             android:process=":remote" />
+
+        <activity
+            android:name=".PasswordManagerActivity"
+            android:label="@string/title_activity_password_manager" >
+        </activity>
+        <activity
+            android:name=".Password"
+            android:label="@string/title_activity_password" >
+        </activity>
     </application>
 
 </manifest>

@@ -406,6 +406,12 @@
                    android:text="알람"
                    android:id="@+id/btn_alarmMng"
                    android:onClick="goAlarmMng" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="비밀번호설정"
+                   android:id="@+id/btn_pwdMng"
+                   android:onClick="goPWDMng" />
            </GridLayout>
         </LinearLayout>
      </ScrollView>

@@ -387,9 +387,18 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-
     public void goAlarmMng(View v) {
         Intent intent = new Intent(this, AlarmManager2Activity.class);
         startActivity(intent);
     }
+
+    public void goPWDMng(View v) {
+        Intent intent = new Intent(this, PasswordManagerActivity.class);
+        startActivity(intent);
+    }
+
+
+
+
+
 }
