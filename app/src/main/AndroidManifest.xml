@@ -340,6 +340,16 @@
             android:name=".DownLoadManagerActivity"
             android:label="@string/title_activity_down_load_manager" >
         </activity>
+        <activity
+            android:name=".AlarmManager2Activity"
+            android:label="@string/title_activity_alarm_manager2" >
+        </activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" />
     </application>
 
 </manifest>

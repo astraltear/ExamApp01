@@ -400,6 +400,12 @@
                    android:text="다운로드매니져"
                    android:id="@+id/btn_downloadMng"
                    android:onClick="goDownloadMng" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="알람"
+                   android:id="@+id/btn_alarmMng"
+                   android:onClick="goAlarmMng" />
            </GridLayout>
         </LinearLayout>
      </ScrollView>
