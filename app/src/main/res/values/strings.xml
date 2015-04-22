@@ -145,5 +145,7 @@
     <string name="title_activity_alarm_manager2">AlarmManager2Activity</string>
     <string name="title_activity_password_manager">PasswordManagerActivity</string>
     <string name="title_activity_password">Password</string>
+    <string name="title_activity_list_view_index">ListViewIndexActivity</string>
+    <string name="title_activity_side_index">SideIndexActivity</string>
 
 </resources>

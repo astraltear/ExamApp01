@@ -359,6 +359,10 @@
             android:name=".Password"
             android:label="@string/title_activity_password" >
         </activity>
+        <activity
+            android:name=".ListViewIndexActivity"
+            android:label="@string/title_activity_list_view_index" >
+        </activity>
     </application>
 
 </manifest>
