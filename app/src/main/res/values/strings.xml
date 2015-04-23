@@ -147,5 +147,6 @@
     <string name="title_activity_password">Password</string>
     <string name="title_activity_list_view_index">ListViewIndexActivity</string>
     <string name="title_activity_side_index">SideIndexActivity</string>
+    <string name="title_activity_image_cache">ImageCacheActivity</string>
 
 </resources>

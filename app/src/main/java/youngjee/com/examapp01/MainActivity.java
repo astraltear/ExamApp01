@@ -402,7 +402,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-
+    public void goImageCache(View v){
+        Intent intent = new Intent(this, ImageCacheActivity.class);
+        startActivity(intent);
+    }
 
 
 }

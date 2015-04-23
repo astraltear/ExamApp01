@@ -363,6 +363,10 @@
             android:name=".ListViewIndexActivity"
             android:label="@string/title_activity_list_view_index" >
         </activity>
+        <activity
+            android:name=".ImageCacheActivity"
+            android:label="@string/title_activity_image_cache" >
+        </activity>
     </application>
 
 </manifest>
