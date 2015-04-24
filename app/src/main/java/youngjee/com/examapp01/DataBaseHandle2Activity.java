@@ -134,10 +134,16 @@ public class DataBaseHandle2Activity extends Activity {
             String tagName = tabHost.getCurrentTabTag();
 
             String _id = ((TextView) view.findViewById(R.id.idx)).getText().toString();
+//            Log.d(getClass().getSimpleName(), _id);
 
             Cursor cursor1 = db.query("CanGuide", new String[]{"RecTxt"}, "_id" + "=" + _id, null, null, null, null,null);
             startManagingCursor(cursor1);
-            String note = cursor1.getString(5);
+
+            if (cursor1 !=null) {
+                cursor1.moveToFirst();
+            }
+
+            String note = cursor1.getString(0);
             Log.d(getClass().getSimpleName(), note);
         }
     };
