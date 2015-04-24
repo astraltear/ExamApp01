@@ -424,6 +424,12 @@
                    android:text="이미지캐시"
                    android:id="@+id/btn_ImageCache"
                    android:onClick="goImageCache" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="DB처리2"
+                   android:id="@+id/btn_DataBaseHandle"
+                   android:onClick="goDataBaseHandle" />
            </GridLayout>
         </LinearLayout>
      </ScrollView>

@@ -406,6 +406,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Intent intent = new Intent(this, ImageCacheActivity.class);
         startActivity(intent);
     }
-
+    public void goDataBaseHandle(View v){
+        Intent intent = new Intent(this, DataBaseHandle2Activity.class);
+        startActivity(intent);
+    }
 
 }

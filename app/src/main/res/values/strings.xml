@@ -148,5 +148,11 @@
     <string name="title_activity_list_view_index">ListViewIndexActivity</string>
     <string name="title_activity_side_index">SideIndexActivity</string>
     <string name="title_activity_image_cache">ImageCacheActivity</string>
+    <string name="title_activity_data_base_handle2">DataBaseHandle2Activity</string>
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
 
 </resources>

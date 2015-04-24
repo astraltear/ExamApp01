@@ -367,6 +367,10 @@
             android:name=".ImageCacheActivity"
             android:label="@string/title_activity_image_cache" >
         </activity>
+        <activity
+            android:name=".DataBaseHandle2Activity"
+            android:label="@string/title_activity_data_base_handle2" >
+        </activity>
     </application>
 
 </manifest>
