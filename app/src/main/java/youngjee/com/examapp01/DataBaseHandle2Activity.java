@@ -1,6 +1,8 @@
 package youngjee.com.examapp01;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -136,7 +138,7 @@ public class DataBaseHandle2Activity extends Activity {
             String _id = ((TextView) view.findViewById(R.id.idx)).getText().toString();
 //            Log.d(getClass().getSimpleName(), _id);
 
-            Cursor cursor1 = db.query("CanGuide", new String[]{"RecTxt"}, "_id" + "=" + _id, null, null, null, null,null);
+            Cursor cursor1 = db.query("CanGuide", new String[]{"RecTxt","DxCodName"}, "_id" + "=" + _id, null, null, null, null,null);
             startManagingCursor(cursor1);
 
             if (cursor1 !=null) {
@@ -144,7 +146,18 @@ public class DataBaseHandle2Activity extends Activity {
             }
 
             String note = cursor1.getString(0);
-            Log.d(getClass().getSimpleName(), note);
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(DataBaseHandle2Activity.this);
+            builder.setTitle(cursor1.getString(1));
+            builder.setMessage(note);
+            builder.setIcon(R.drawable.ic_menu_add);
+            builder.setPositiveButton("Close", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {}
+            });
+
+            builder.show();
+//            Log.d(getClass().getSimpleName(), note);
         }
     };
 
