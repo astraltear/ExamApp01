@@ -430,6 +430,12 @@
                    android:text="DB처리2 탭뷰"
                    android:id="@+id/btn_DataBaseHandle"
                    android:onClick="goDataBaseHandle" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="어댑터필터"
+                   android:id="@+id/btn_AdapterFiler"
+                   android:onClick="goAdapterFiler" />
            </GridLayout>
         </LinearLayout>
      </ScrollView>

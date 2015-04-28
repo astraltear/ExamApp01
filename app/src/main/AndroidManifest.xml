@@ -371,6 +371,10 @@
             android:name=".DataBaseHandle2Activity"
             android:label="@string/title_activity_data_base_handle2" >
         </activity>
+        <activity
+            android:name=".AdapterFilterActivity"
+            android:label="@string/title_activity_adapter_filter" >
+        </activity>
     </application>
 
 </manifest>

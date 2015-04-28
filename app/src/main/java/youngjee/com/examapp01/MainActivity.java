@@ -411,4 +411,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goAdapterFiler(View v){
+        Intent intent = new Intent(this, AdapterFilterActivity.class);
+        startActivity(intent);
+    }
+
+
+
 }
