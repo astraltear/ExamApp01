@@ -375,6 +375,14 @@
             android:name=".AdapterFilterActivity"
             android:label="@string/title_activity_adapter_filter" >
         </activity>
+        <activity
+            android:name=".ActivitySendObjectActivity"
+            android:label="@string/title_activity_activity_send_object" >
+        </activity>
+        <activity
+            android:name=".ActivityReceiveObjectActivity"
+            android:label="@string/title_activity_activity_receive_object" >
+        </activity>
     </application>
 
 </manifest>

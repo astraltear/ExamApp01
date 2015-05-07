@@ -436,6 +436,12 @@
                    android:text="어댑터필터"
                    android:id="@+id/btn_AdapterFiler"
                    android:onClick="goAdapterFiler" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="오브젝트전달"
+                   android:id="@+id/btn_SendObject"
+                   android:onClick="goSendObject" />
            </GridLayout>
         </LinearLayout>
      </ScrollView>

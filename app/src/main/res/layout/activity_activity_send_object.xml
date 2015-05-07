@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv01"
+        android:textSize="48dp"
+        android:text="Text1:"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/ed01"
+        android:textSize="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv01"
+        android:layout_alignBaseline="@id/tv01"
+        />
+    <TextView
+        android:id="@+id/tv02"
+        android:text="Text2:"
+        android:textSize="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed01"/>
+    <EditText
+        android:id="@+id/ed02"
+        android:textSize="48dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv02"
+        android:layout_alignBaseline="@id/tv02"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:text="SEND"
+        android:textSize="48dp"
+        android:layout_marginBottom="220dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

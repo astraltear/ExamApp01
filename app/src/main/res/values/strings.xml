@@ -156,5 +156,7 @@
     <string name="title_section3">Section 3</string>
     <string name="title_activity_adapter_filter">AdapterFilterActivity</string>
     <string name="title_activity_scroll_view">ScrollViewActivity</string>
+    <string name="title_activity_activity_send_object">ActivitySendObjectActivity</string>
+    <string name="title_activity_activity_receive_object">ActivityReceiveObjectActivity</string>
 
 </resources>

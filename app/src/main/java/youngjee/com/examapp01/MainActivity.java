@@ -416,6 +416,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goSendObject(View v){
+        Intent intent = new Intent(this, ActivitySendObjectActivity.class);
+        startActivity(intent);
+    }
 
 
 
