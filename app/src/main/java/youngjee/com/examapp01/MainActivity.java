@@ -421,6 +421,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goPhotoView(View v){
+        Intent intent = new Intent(this, PhotoViewerActivity.class);
+        startActivity(intent);
+    }
 
 
 }

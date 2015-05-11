@@ -383,6 +383,10 @@
             android:name=".ActivityReceiveObjectActivity"
             android:label="@string/title_activity_activity_receive_object" >
         </activity>
+        <activity
+            android:name=".PhotoViewerActivity"
+            android:label="@string/title_activity_photo_viewer" >
+        </activity>
     </application>
 
 </manifest>

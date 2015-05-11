@@ -158,5 +158,6 @@
     <string name="title_activity_scroll_view">ScrollViewActivity</string>
     <string name="title_activity_activity_send_object">ActivitySendObjectActivity</string>
     <string name="title_activity_activity_receive_object">ActivityReceiveObjectActivity</string>
+    <string name="title_activity_photo_viewer">PhotoViewerActivity</string>
 
 </resources>
