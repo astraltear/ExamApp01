@@ -387,6 +387,18 @@
             android:name=".PhotoViewerActivity"
             android:label="@string/title_activity_photo_viewer" >
         </activity>
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:label="@string/title_activity_recycler_view" >
+        </activity>
+        <activity
+            android:name=".AuilSampleMainActivity"
+            android:label="@string/title_activity_auil_sample_main" >
+        </activity>
+        <activity
+            android:name=".AuidSampleActivity"
+            android:label="@string/title_activity_auid_sample_main" >
+        </activity>
     </application>
 
 </manifest>

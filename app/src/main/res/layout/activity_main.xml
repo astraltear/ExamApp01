@@ -448,6 +448,18 @@
                    android:text="이미지확대"
                    android:id="@+id/btn_photoView"
                    android:onClick="goPhotoView" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="RecyclerView"
+                   android:id="@+id/btn_RecyclerView"
+                   android:onClick="goRecyclerView" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="AUIL"
+                   android:id="@+id/btn_auilsample"
+                   android:onClick="goAuilsample" />
            </GridLayout>
         </LinearLayout>
      </ScrollView>

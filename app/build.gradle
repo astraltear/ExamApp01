@@ -30,4 +30,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile files('libs/google-api-translate-java-0.97.jar')
     compile 'com.github.chrisbanes.photoview:library:1.2.3'
+    compile 'org.lucasr.twowayview:twowayview:0.1.4'
 }

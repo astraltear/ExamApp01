@@ -426,5 +426,13 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void goRecyclerView(View v){
+        Intent intent = new Intent(this, RecyclerViewActivity.class);
+        startActivity(intent);
+    }
 
+    public void goAuilsample(View v){
+        Intent intent = new Intent(this, AuilSampleMainActivity.class);
+        startActivity(intent);
+    }
 }

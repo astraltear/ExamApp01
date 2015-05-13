@@ -159,5 +159,9 @@
     <string name="title_activity_activity_send_object">ActivitySendObjectActivity</string>
     <string name="title_activity_activity_receive_object">ActivityReceiveObjectActivity</string>
     <string name="title_activity_photo_viewer">PhotoViewerActivity</string>
+    <string name="title_activity_recycler_view">RecyclerViewActivity</string>
+    <string name="title_activity_recycler_view2">RecyclerView2Activity</string>
+    <string name="title_activity_auil_sample_main">AuilSampleMainActivity</string>
+    <string name="title_activity_auid_sample_main">AuidSampleActivity</string>
 
 </resources>
