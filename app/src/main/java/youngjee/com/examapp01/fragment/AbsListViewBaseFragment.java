@@ -1,6 +1,10 @@
 package youngjee.com.examapp01.fragment;
 
+import android.content.Intent;
 import android.widget.AbsListView;
+
+import youngjee.com.examapp01.AuidSampleActivity;
+import youngjee.com.examapp01.AuilConstants;
 
 public class AbsListViewBaseFragment extends BaseFragment {
     protected static final String STATE_PAUSE_ON_SCROLL = "STATE_PAUSE_ON_SCROLL";
@@ -10,6 +14,13 @@ public class AbsListViewBaseFragment extends BaseFragment {
 
     protected boolean pauseOnScroll = false;
     protected boolean pauseOnFling = true;
+
+	protected void startImagePagerActivity(int position) {
+		Intent intent = new Intent(getActivity(), AuidSampleActivity.class);
+		intent.putExtra(AuilConstants.Extra.FRAGMENT_INDEX, ImagePagerFragment.INDEX);
+		intent.putExtra(AuilConstants.Extra.IMAGE_POSITION, position);
+		startActivity(intent);
+	}
 
     // TODO:: 나머지 부분 이해가 안되서 일단 주석처리
     /*
@@ -49,12 +60,7 @@ public class AbsListViewBaseFragment extends BaseFragment {
 		}
 	}
 
-	protected void startImagePagerActivity(int position) {
-		Intent intent = new Intent(getActivity(), SimpleImageActivity.class);
-		intent.putExtra(Constants.Extra.FRAGMENT_INDEX, ImagePagerFragment.INDEX);
-		intent.putExtra(Constants.Extra.IMAGE_POSITION, position);
-		startActivity(intent);
-	}
+
 
 	private void applyScrollListener() {
 		listView.setOnScrollListener(new PauseOnScrollListener(ImageLoader.getInstance(), pauseOnScroll, pauseOnFling));
