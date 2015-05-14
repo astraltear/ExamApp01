@@ -10,7 +10,7 @@ import youngjee.com.examapp01.fragment.ImageGridFragment;
 import youngjee.com.examapp01.fragment.ImageListFragment;
 import youngjee.com.examapp01.fragment.ImagePagerFragment;
 
-public class AuidSampleActivity extends FragmentActivity {
+public class AuilSampleActivity extends FragmentActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

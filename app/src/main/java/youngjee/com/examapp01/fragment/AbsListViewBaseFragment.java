@@ -3,7 +3,7 @@ package youngjee.com.examapp01.fragment;
 import android.content.Intent;
 import android.widget.AbsListView;
 
-import youngjee.com.examapp01.AuidSampleActivity;
+import youngjee.com.examapp01.AuilSampleActivity;
 import youngjee.com.examapp01.AuilConstants;
 
 public class AbsListViewBaseFragment extends BaseFragment {
@@ -16,7 +16,7 @@ public class AbsListViewBaseFragment extends BaseFragment {
     protected boolean pauseOnFling = true;
 
 	protected void startImagePagerActivity(int position) {
-		Intent intent = new Intent(getActivity(), AuidSampleActivity.class);
+		Intent intent = new Intent(getActivity(), AuilSampleActivity.class);
 		intent.putExtra(AuilConstants.Extra.FRAGMENT_INDEX, ImagePagerFragment.INDEX);
 		intent.putExtra(AuilConstants.Extra.IMAGE_POSITION, position);
 		startActivity(intent);

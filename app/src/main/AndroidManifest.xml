@@ -396,7 +396,7 @@
             android:label="@string/title_activity_auil_sample_main" >
         </activity>
         <activity
-            android:name=".AuidSampleActivity"
+            android:name=".AuilSampleActivity"
             android:label="@string/title_activity_auid_sample_main" >
         </activity>
         <activity

@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
@@ -31,25 +29,25 @@ public class AuilSampleMainActivity extends ActionBarActivity {
     }
 
     public void onImageListClick(View view) {
-        Intent intent = new Intent(this, AuidSampleActivity.class);
+        Intent intent = new Intent(this, AuilSampleActivity.class);
         intent.putExtra(AuilConstants.Extra.FRAGMENT_INDEX, ImageListFragment.INDEX);
         startActivity(intent);
     }
 
     public void onImagePagerClick(View view) {
-        Intent intent = new Intent(this, AuidSampleActivity.class);
+        Intent intent = new Intent(this, AuilSampleActivity.class);
         intent.putExtra(AuilConstants.Extra.FRAGMENT_INDEX, ImagePagerFragment.INDEX);
         startActivity(intent);
     }
 
     public void onImageGridClick(View view) {
-        Intent intent = new Intent(this, AuidSampleActivity.class);
+        Intent intent = new Intent(this, AuilSampleActivity.class);
         intent.putExtra(AuilConstants.Extra.FRAGMENT_INDEX, ImageGridFragment.INDEX);
         startActivity(intent);
     }
 
     public void onImageGalleryClick(View view) {
-        Intent intent = new Intent(this, AuidSampleActivity.class);
+        Intent intent = new Intent(this, AuilSampleActivity.class);
         intent.putExtra(AuilConstants.Extra.FRAGMENT_INDEX, ImageGalleryFragment.INDEX);
         startActivity(intent);
     }

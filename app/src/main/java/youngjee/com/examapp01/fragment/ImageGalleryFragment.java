@@ -4,9 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,17 +11,11 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Gallery;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.assist.FailReason;
-import com.nostra13.universalimageloader.core.assist.ImageScaleType;
-import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
-import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
 
-import youngjee.com.examapp01.AuidSampleActivity;
+import youngjee.com.examapp01.AuilSampleActivity;
 import youngjee.com.examapp01.AuilConstants;
 import youngjee.com.examapp01.R;
 
@@ -50,7 +41,7 @@ public class ImageGalleryFragment extends BaseFragment {
     }
 
     protected void startImagePagerActivity(int position) {
-        Intent intent = new Intent(getActivity(), AuidSampleActivity.class);
+        Intent intent = new Intent(getActivity(), AuilSampleActivity.class);
         intent.putExtra(AuilConstants.Extra.FRAGMENT_INDEX, ImagePagerFragment.INDEX);
         intent.putExtra(AuilConstants.Extra.IMAGE_POSITION, position);
         startActivity(intent);
