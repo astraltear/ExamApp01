@@ -13,6 +13,9 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 
+import youngjee.com.examapp01.fragment.ComplexImageActivity;
+import youngjee.com.examapp01.fragment.ImageGalleryFragment;
+import youngjee.com.examapp01.fragment.ImageGridFragment;
 import youngjee.com.examapp01.fragment.ImageListFragment;
 import youngjee.com.examapp01.fragment.ImagePagerFragment;
 
@@ -36,6 +39,23 @@ public class AuilSampleMainActivity extends ActionBarActivity {
     public void onImagePagerClick(View view) {
         Intent intent = new Intent(this, AuidSampleActivity.class);
         intent.putExtra(AuilConstants.Extra.FRAGMENT_INDEX, ImagePagerFragment.INDEX);
+        startActivity(intent);
+    }
+
+    public void onImageGridClick(View view) {
+        Intent intent = new Intent(this, AuidSampleActivity.class);
+        intent.putExtra(AuilConstants.Extra.FRAGMENT_INDEX, ImageGridFragment.INDEX);
+        startActivity(intent);
+    }
+
+    public void onImageGalleryClick(View view) {
+        Intent intent = new Intent(this, AuidSampleActivity.class);
+        intent.putExtra(AuilConstants.Extra.FRAGMENT_INDEX, ImageGalleryFragment.INDEX);
+        startActivity(intent);
+    }
+
+    public void onFragmentsClick(View view) {
+        Intent intent = new Intent(this, ComplexImageActivity.class);
         startActivity(intent);
     }
 

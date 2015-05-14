@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 
+import youngjee.com.examapp01.fragment.ImageGalleryFragment;
+import youngjee.com.examapp01.fragment.ImageGridFragment;
 import youngjee.com.examapp01.fragment.ImageListFragment;
 import youngjee.com.examapp01.fragment.ImagePagerFragment;
 
@@ -43,6 +45,28 @@ public class AuidSampleActivity extends FragmentActivity {
                 }
 
                 titleRes = "Image Pager Example";
+                break;
+
+            case ImageGridFragment.INDEX:
+                tag = ImageGridFragment.class.getSimpleName();
+                fragment = getSupportFragmentManager().findFragmentByTag(tag);
+
+                if(fragment == null) {
+                    fragment = new ImageGridFragment();
+                }
+
+                titleRes = "Image Grid Example";
+                break;
+
+            case ImageGalleryFragment.INDEX:
+                tag = ImageGalleryFragment.class.getSimpleName();
+                fragment = getSupportFragmentManager().findFragmentByTag(tag);
+
+                if(fragment == null) {
+                    fragment = new ImageGalleryFragment();
+                }
+
+                titleRes = "Image Gallery Example";
                 break;
 
         }
