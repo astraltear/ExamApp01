@@ -1,5 +1,12 @@
 package youngjee.com.examapp01.fragment;
 
+import android.os.PersistableBundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,33 +14,68 @@ import android.view.MenuItem;
 
 import youngjee.com.examapp01.R;
 
-public class ComplexImageActivity extends ActionBarActivity {
+public class ComplexImageActivity extends FragmentActivity {
+
+    private static final String STATE_POSITION = "STATE_POSITION";
+
+    private ViewPager pager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complex_image);
+
+        int pagePosition = savedInstanceState == null ? 0 : savedInstanceState.getInt(STATE_POSITION);
+
+        pager = (ViewPager) findViewById(R.id.pager);
+        pager.setAdapter(new ImagePagerAdapter(getSupportFragmentManager()));
+        pager.setCurrentItem(pagePosition);
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_complex_image, menu);
-        return true;
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putInt(STATE_POSITION,pager.getCurrentItem());
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    private class ImagePagerAdapter extends FragmentPagerAdapter {
+
+        Fragment listFragment;
+        Fragment gridFragment;
+
+        ImagePagerAdapter(FragmentManager fm){
+            super(fm);
+            listFragment = new ImageListFragment();
+            gridFragment = new ImageGridFragment();
         }
 
-        return super.onOptionsItemSelected(item);
+        @Override
+        public Fragment getItem(int position) {
+         switch (position){
+             case 0:
+                 return listFragment;
+             case 1:
+                 return gridFragment;
+             default:
+                 return null;
+         }
+        }
+
+        @Override
+        public int getCount() {
+            return 2;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            switch (position){
+                case 0:
+                    return "LIST";
+                case 1:
+                    return "GRID";
+                default:
+                    return null;
+            }
+        }
     }
 }
