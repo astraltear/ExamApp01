@@ -435,4 +435,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Intent intent = new Intent(this, AuilSampleMainActivity.class);
         startActivity(intent);
     }
+
+    public void goVolleysample(View v){
+        Intent intent = new Intent(this, VolleySampleMainActivity.class);
+        startActivity(intent);
+    }
 }

@@ -403,6 +403,10 @@
             android:name=".fragment.ComplexImageActivity"
             android:label="@string/title_activity_complex_image" >
         </activity>
+        <activity
+            android:name=".VolleySampleMainActivity"
+            android:label="@string/title_activity_volley_sample_main" >
+        </activity>
     </application>
 
 </manifest>

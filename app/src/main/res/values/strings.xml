@@ -164,5 +164,6 @@
     <string name="title_activity_auil_sample_main">AuilSampleMainActivity</string>
     <string name="title_activity_auid_sample_main">AuidSampleActivity</string>
     <string name="title_activity_complex_image">ComplexImageActivity</string>
+    <string name="title_activity_volley_sample_main">VolleySampleMainActivity</string>
 
 </resources>
