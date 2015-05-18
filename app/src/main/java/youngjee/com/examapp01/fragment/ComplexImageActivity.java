@@ -42,11 +42,14 @@ public class ComplexImageActivity extends FragmentActivity {
 
         Fragment listFragment;
         Fragment gridFragment;
+        Fragment galleryFragment;
 
         ImagePagerAdapter(FragmentManager fm){
             super(fm);
             listFragment = new ImageListFragment();
             gridFragment = new ImageGridFragment();
+            galleryFragment = new ImageGalleryFragment();
+
         }
 
         @Override
@@ -56,6 +59,8 @@ public class ComplexImageActivity extends FragmentActivity {
                  return listFragment;
              case 1:
                  return gridFragment;
+             case 2:
+                 return galleryFragment;
              default:
                  return null;
          }
@@ -63,7 +68,7 @@ public class ComplexImageActivity extends FragmentActivity {
 
         @Override
         public int getCount() {
-            return 2;
+            return 3;
         }
 
         @Override
@@ -73,6 +78,8 @@ public class ComplexImageActivity extends FragmentActivity {
                     return "LIST";
                 case 1:
                     return "GRID";
+                case 2:
+                    return "Gallery";
                 default:
                     return null;
             }
