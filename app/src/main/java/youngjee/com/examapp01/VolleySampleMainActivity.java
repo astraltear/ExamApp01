@@ -54,12 +54,6 @@ public class VolleySampleMainActivity extends ActionBarActivity {
         String url ="http://pipes.yahooapis.com/pipes/pipe.run?_id=giWz8Vc33BG6rQEQo_NLYQ&_render=json";
         pd = ProgressDialog.show(this,"Please Wait...","Please Wait...");
 
-        try{
-            Thread.sleep(2000);
-        } catch (Exception e){
-
-        }
-
         JsonObjectRequest jr = new JsonObjectRequest(Request.Method.GET, url,null,
 
         new Response.Listener<JSONObject>(){
