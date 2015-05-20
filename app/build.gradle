@@ -33,4 +33,5 @@ dependencies {
     compile 'org.lucasr.twowayview:twowayview:0.1.4'
     compile 'me.neavo:volley:2014.12.09'
     compile 'com.sothree.slidinguppanel:library:3.0.0'
+    compile 'com.github.pavlospt:circleview:1.2'
 }
