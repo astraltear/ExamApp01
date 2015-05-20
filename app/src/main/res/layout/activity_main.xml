@@ -466,6 +466,12 @@
                    android:text="volley"
                    android:id="@+id/btn_volleysample"
                    android:onClick="goVolleysample" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="SlideUpPanel"
+                   android:id="@+id/btn_slideuppanel"
+                   android:onClick="goSlideUpPanel" />
            </GridLayout>
         </LinearLayout>
      </ScrollView>

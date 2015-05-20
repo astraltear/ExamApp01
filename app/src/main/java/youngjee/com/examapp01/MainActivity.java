@@ -440,4 +440,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Intent intent = new Intent(this, VolleySampleMainActivity.class);
         startActivity(intent);
     }
+
+    public void goSlideUpPanel(View v){
+        Intent intent = new Intent(this, SlideUpPanelActivity.class);
+        startActivity(intent);
+    }
 }

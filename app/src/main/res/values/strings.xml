@@ -165,5 +165,6 @@
     <string name="title_activity_auid_sample_main">AuidSampleActivity</string>
     <string name="title_activity_complex_image">ComplexImageActivity</string>
     <string name="title_activity_volley_sample_main">VolleySampleMainActivity</string>
+    <string name="title_activity_slide_up_panel">SlideUpPanelActivity</string>
 
 </resources>
