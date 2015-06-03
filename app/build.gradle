@@ -20,6 +20,7 @@ android {
     }
 
     repositories {
+
         mavenCentral()
     }
 
@@ -28,10 +29,13 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:21.0.3'
-    compile files('libs/google-api-translate-java-0.97.jar')
+    //compile files('libs/google-api-translate-java-0.97.jar')
     compile 'com.github.chrisbanes.photoview:library:1.2.3'
     compile 'org.lucasr.twowayview:twowayview:0.1.4'
     compile 'me.neavo:volley:2014.12.09'
     compile 'com.sothree.slidinguppanel:library:3.0.0'
     compile 'com.github.pavlospt:circleview:1.2'
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+    //compile 'com.android.support:support-v4:19.1.0'
+
 }

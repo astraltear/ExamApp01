@@ -166,5 +166,8 @@
     <string name="title_activity_complex_image">ComplexImageActivity</string>
     <string name="title_activity_volley_sample_main">VolleySampleMainActivity</string>
     <string name="title_activity_slide_up_panel">SlideUpPanelActivity</string>
+    <string name="title_activity_view_pager_indicator">ViewPagerIndicatorActivity</string>
+    <string name="title_activity_sample_circles_default">SampleCirclesDefaultActivity</string>
+    <string name="title_activity_glide_demo">GlideDemoActivity</string>
 
 </resources>

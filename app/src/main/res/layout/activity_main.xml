@@ -472,6 +472,12 @@
                    android:text="SlideUpPanel"
                    android:id="@+id/btn_slideuppanel"
                    android:onClick="goSlideUpPanel" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Glide"
+                   android:id="@+id/btn_glide"
+                   android:onClick="goGlide" />
            </GridLayout>
         </LinearLayout>
      </ScrollView>

@@ -412,6 +412,18 @@
             android:label="@string/title_activity_slide_up_panel"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         </activity>
+        <activity
+            android:name=".ViewPagerIndicatorActivity"
+            android:label="@string/title_activity_view_pager_indicator" >
+        </activity>
+        <activity
+            android:name=".pagerindicator.SampleCirclesDefaultActivity"
+            android:label="@string/title_activity_sample_circles_default" >
+        </activity>
+        <activity
+            android:name=".GlideDemoActivity"
+            android:label="@string/title_activity_glide_demo" >
+        </activity>
     </application>
 
 </manifest>

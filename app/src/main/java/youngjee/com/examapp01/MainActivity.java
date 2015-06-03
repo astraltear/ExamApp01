@@ -445,4 +445,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Intent intent = new Intent(this, SlideUpPanelActivity.class);
         startActivity(intent);
     }
+
+    public void goGlide(View v){
+        Intent intent = new Intent(this, GlideDemoActivity.class);
+        startActivity(intent);
+    }
 }

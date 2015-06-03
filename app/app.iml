@@ -97,5 +97,6 @@
     <orderEntry type="library" exported="" name="twowayview-0.1.4" level="project" />
     <orderEntry type="library" exported="" name="universal-image-loader-1.9.3" level="project" />
     <orderEntry type="library" exported="" name="library-3.0.0" level="project" />
+    <orderEntry type="library" exported="" name="glide-3.6.0" level="project" />
   </component>
 </module>
