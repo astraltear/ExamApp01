@@ -478,6 +478,12 @@
                    android:text="Glide"
                    android:id="@+id/btn_glide"
                    android:onClick="goGlide" />
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="rest api"
+                   android:id="@+id/btn_restapi"
+                   android:onClick="goRestAPI"/>
            </GridLayout>
         </LinearLayout>
      </ScrollView>

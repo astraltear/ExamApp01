@@ -450,4 +450,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Intent intent = new Intent(this, GlideDemoActivity.class);
         startActivity(intent);
     }
+
+    public void goRestAPI(View v) {
+        Intent intent = new Intent(this, RestAPISampleActivity.class);
+        startActivity(intent);
+    }
 }
