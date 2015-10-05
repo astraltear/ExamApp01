@@ -455,4 +455,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Intent intent = new Intent(this, RestAPISampleActivity.class);
         startActivity(intent);
     }
+
+    public void goPlayVideo(View v) {
+        Intent intent = new Intent(this, PlayVideoActivity.class);
+        startActivity(intent);
+    }
 }

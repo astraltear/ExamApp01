@@ -484,6 +484,12 @@
                    android:text="rest api"
                    android:id="@+id/btn_restapi"
                    android:onClick="goRestAPI"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="play video"
+                   android:id="@+id/btn_playVideo"
+                   android:onClick="goPlayVideo"/>
            </GridLayout>
         </LinearLayout>
      </ScrollView>
